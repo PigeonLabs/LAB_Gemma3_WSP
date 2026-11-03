@@ -1,0 +1,9 @@
+{
+  "format": "equations",
+  "development_accuracy": {
+    "table": 0.6145833333333334,
+    "equations": 0.6354166666666666,
+    "grouped": 0.59375
+  },
+  "selection_rule": "highest development accuracy; declaration-order tie break"
+}

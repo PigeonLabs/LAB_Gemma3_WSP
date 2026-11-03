@@ -1,0 +1,356 @@
+{"command": ["/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/bin/python", "scripts/run_study.py", "calibrate"], "started_at": "2026-11-03T13:25:55.846764+00:00"}
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   0%|          | 2/677 [00:00<01:13,  9.19it/s]Loading weights:   3%|▎         | 22/677 [00:00<00:08, 79.42it/s]Loading weights:   7%|▋         | 48/677 [00:00<00:04, 135.94it/s]Loading weights:  10%|▉         | 65/677 [00:00<00:04, 138.86it/s]Loading weights:  13%|█▎        | 88/677 [00:00<00:03, 166.42it/s]Loading weights:  16%|█▌        | 107/677 [00:00<00:03, 155.13it/s]Loading weights:  19%|█▉        | 131/677 [00:00<00:03, 170.57it/s]Loading weights:  22%|██▏       | 149/677 [00:01<00:03, 164.08it/s]Loading weights:  25%|██▍       | 169/677 [00:01<00:02, 173.29it/s]Loading weights:  28%|██▊       | 187/677 [00:01<00:03, 156.52it/s]Loading weights:  31%|███▏      | 213/677 [00:01<00:02, 176.05it/s]Loading weights:  34%|███▍      | 232/677 [00:01<00:02, 171.32it/s]Loading weights:  37%|███▋      | 252/677 [00:01<00:02, 178.89it/s]Loading weights:  40%|████      | 271/677 [00:01<00:02, 164.17it/s]Loading weights:  44%|████▍     | 297/677 [00:01<00:02, 181.43it/s]Loading weights:  47%|████▋     | 316/677 [00:01<00:02, 176.65it/s]Loading weights:  49%|████▉     | 334/677 [00:02<00:01, 177.18it/s]Loading weights:  52%|█████▏    | 352/677 [00:02<00:01, 176.08it/s]Loading weights:  55%|█████▍    | 370/677 [00:02<00:01, 171.49it/s]Loading weights:  58%|█████▊    | 391/677 [00:02<00:01, 180.94it/s]Loading weights:  61%|██████    | 410/677 [00:02<00:01, 165.82it/s]Loading weights:  64%|██████▍   | 435/677 [00:02<00:01, 181.47it/s]Loading weights:  67%|██████▋   | 454/677 [00:02<00:01, 168.39it/s]Loading weights:  70%|███████   | 474/677 [00:02<00:01, 175.73it/s]Loading weights:  73%|███████▎  | 492/677 [00:03<00:01, 164.72it/s]Loading weights:  75%|███████▌  | 509/677 [00:03<00:01, 159.38it/s]Loading weights:  79%|███████▊  | 532/677 [00:03<00:00, 171.05it/s]Loading weights:  81%|████████  | 550/677 [00:03<00:00, 165.06it/s]Loading weights:  85%|████████▍ | 574/677 [00:03<00:00, 177.23it/s]Loading weights:  87%|████████▋ | 592/677 [00:03<00:00, 165.95it/s]Loading weights:  91%|█████████ | 615/677 [00:03<00:00, 180.99it/s]Loading weights:  94%|█████████▎| 634/677 [00:03<00:00, 170.90it/s]Loading weights:  97%|█████████▋| 654/677 [00:03<00:00, 177.93it/s]Loading weights: 100%|██████████| 677/677 [00:04<00:00, 167.06it/s]
+observer_ready load_seconds=6.948
+development-L03C01-table-6 answer=B correct=True seconds=0.806
+development-L13C04-equations-7 answer=B correct=True seconds=0.462
+development-L03C02-grouped-7 answer=A correct=True seconds=0.365
+development-L18C00-equations-6 answer=B correct=False seconds=0.449
+development-L23C04-grouped-6 answer=B correct=False seconds=0.358
+development-L23C04-table-6 answer=B correct=False seconds=0.362
+development-L18C03-equations-6 answer=B correct=True seconds=0.475
+development-L28C03-table-6 answer=A correct=False seconds=0.376
+development-L08C01-table-6 answer=B correct=True seconds=0.414
+development-L03C00-equations-7 answer=UNKNOWN correct=False seconds=0.453
+development-L28C05-table-6 answer=B correct=True seconds=0.362
+development-L28C06-grouped-6 answer=B correct=False seconds=0.342
+development-L08C06-equations-6 answer=B correct=False seconds=0.453
+development-L03C03-table-7 answer=B correct=False seconds=0.375
+development-L03C01-grouped-7 answer=A correct=False seconds=0.360
+development-L28C05-table-7 answer=A correct=False seconds=0.377
+development-L23C05-table-7 answer=B correct=True seconds=0.371
+development-L03C02-grouped-6 answer=A correct=True seconds=0.377
+development-L28C04-table-7 answer=A correct=True seconds=0.383
+development-L03C06-equations-6 answer=B correct=True seconds=0.453
+development-L13C00-grouped-7 answer=B correct=False seconds=0.382
+development-L23C00-equations-6 answer=B correct=True seconds=0.438
+development-L08C01-equations-6 answer=B correct=True seconds=0.494
+development-L28C01-grouped-7 answer=B correct=False seconds=0.361
+development-L23C01-table-7 answer=B correct=True seconds=0.370
+development-L18C00-table-6 answer=B correct=False seconds=0.373
+development-L08C02-grouped-6 answer=A correct=True seconds=0.375
+development-L08C00-grouped-7 answer=B correct=False seconds=0.365
+development-L28C06-grouped-7 answer=B correct=False seconds=0.351
+development-L28C04-grouped-7 answer=A correct=True seconds=0.380
+development-L18C06-table-6 answer=B correct=False seconds=0.378
+development-L23C07-table-6 answer=B correct=False seconds=0.381
+development-L18C07-table-6 answer=B correct=True seconds=0.373
+development-L03C07-grouped-7 answer=B correct=True seconds=0.341
+development-L18C02-equations-6 answer=A correct=True seconds=0.477
+development-L23C01-equations-6 answer=B correct=True seconds=0.449
+development-L03C05-equations-7 answer=B correct=True seconds=0.468
+development-L03C03-equations-6 answer=B correct=False seconds=0.473
+development-L13C01-equations-6 answer=A correct=True seconds=0.460
+development-L23C00-grouped-6 answer=B correct=True seconds=0.360
+development-L28C06-equations-7 answer=B correct=False seconds=0.437
+development-L18C05-equations-6 answer=B correct=True seconds=0.460
+development-L28C06-equations-6 answer=B correct=False seconds=0.456
+development-L13C06-table-6 answer=B correct=True seconds=0.359
+development-L18C03-equations-7 answer=B correct=True seconds=0.497
+development-L18C02-grouped-7 answer=A correct=True seconds=0.379
+development-L18C07-table-7 answer=B correct=True seconds=0.367
+development-L28C00-grouped-7 answer=A correct=True seconds=0.374
+development-L08C02-grouped-7 answer=A correct=True seconds=0.362
+development-L08C04-table-7 answer=B correct=False seconds=0.381
+development-L13C06-equations-7 answer=B correct=True seconds=0.444
+development-L28C03-equations-6 answer=B correct=True seconds=0.458
+development-L28C03-grouped-7 answer=A correct=False seconds=0.366
+development-L08C03-equations-6 answer=B correct=False seconds=0.482
+development-L28C05-grouped-6 answer=B correct=True seconds=0.353
+development-L03C04-equations-6 answer=B correct=True seconds=0.478
+development-L28C03-table-7 answer=A correct=False seconds=0.369
+development-L13C05-grouped-6 answer=B correct=True seconds=0.354
+development-L18C01-equations-6 answer=A correct=True seconds=0.483
+development-L08C02-equations-6 answer=B correct=False seconds=0.454
+development-L18C04-equations-7 answer=B correct=False seconds=0.454
+development-L08C07-grouped-7 answer=B correct=True seconds=0.382
+development-L18C07-grouped-7 answer=B correct=True seconds=0.355
+development-L18C04-table-6 answer=B correct=False seconds=0.370
+development-L08C07-table-6 answer=B correct=True seconds=0.385
+development-L28C07-equations-7 answer=B correct=True seconds=0.477
+development-L13C05-equations-6 answer=B correct=True seconds=0.475
+development-L18C05-table-7 answer=B correct=True seconds=0.386
+development-L03C06-table-7 answer=B correct=True seconds=0.382
+development-L18C02-grouped-6 answer=B correct=False seconds=0.372
+development-L13C04-grouped-6 answer=B correct=True seconds=0.353
+development-L18C00-table-7 answer=B correct=False seconds=0.366
+development-L23C02-table-6 answer=B correct=False seconds=0.367
+development-L03C00-grouped-7 answer=A correct=True seconds=0.380
+development-L13C03-table-7 answer=B correct=True seconds=0.377
+development-L18C04-table-7 answer=B correct=False seconds=0.381
+development-L08C05-equations-6 answer=B correct=True seconds=0.478
+development-L03C00-table-7 answer=B correct=False seconds=0.380
+development-L08C06-table-6 answer=B correct=False seconds=0.367
+development-L08C05-grouped-6 answer=B correct=True seconds=0.384
+development-L23C05-grouped-7 answer=B correct=True seconds=0.360
+development-L03C01-equations-7 answer=A correct=False seconds=0.472
+development-L28C06-table-6 answer=B correct=False seconds=0.363
+development-L13C03-equations-6 answer=B correct=True seconds=0.481
+development-L08C02-equations-7 answer=UNKNOWN correct=False seconds=0.476
+development-L18C05-equations-7 answer=B correct=True seconds=0.481
+development-L08C05-equations-7 answer=B correct=True seconds=0.499
+development-L18C02-equations-7 answer=A correct=True seconds=0.463
+development-L03C05-equations-6 answer=B correct=True seconds=0.447
+development-L18C06-table-7 answer=B correct=False seconds=0.370
+development-L23C03-equations-7 answer=B correct=True seconds=0.475
+development-L18C06-grouped-7 answer=B correct=False seconds=0.367
+development-L03C06-grouped-7 answer=B correct=True seconds=0.367
+development-L03C06-equations-7 answer=B correct=True seconds=0.476
+development-L03C02-table-6 answer=B correct=False seconds=0.385
+development-L08C05-table-7 answer=B correct=True seconds=0.418
+development-L23C04-table-7 answer=A correct=True seconds=0.381
+development-L13C01-table-7 answer=A correct=True seconds=0.372
+development-L23C02-equations-7 answer=B correct=False seconds=0.470
+development-L13C01-grouped-7 answer=A correct=True seconds=0.370
+development-L13C06-grouped-6 answer=B correct=True seconds=0.343
+development-L23C03-table-6 answer=B correct=True seconds=0.380
+development-L28C05-equations-6 answer=B correct=True seconds=0.472
+development-L23C07-grouped-6 answer=B correct=False seconds=0.384
+development-L13C01-grouped-6 answer=A correct=True seconds=0.382
+development-L23C02-table-7 answer=B correct=False seconds=0.365
+development-L03C07-table-6 answer=B correct=True seconds=0.363
+development-L28C01-grouped-6 answer=B correct=False seconds=0.368
+development-L23C05-equations-6 answer=B correct=True seconds=0.454
+development-L13C06-equations-6 answer=A correct=False seconds=0.460
+development-L23C07-table-7 answer=B correct=False seconds=0.370
+development-L13C07-equations-7 answer=B correct=True seconds=0.481
+development-L23C03-grouped-7 answer=B correct=True seconds=0.366
+development-L18C06-equations-6 answer=B correct=False seconds=0.461
+development-L08C01-equations-7 answer=B correct=True seconds=0.485
+development-L13C05-equations-7 answer=B correct=True seconds=0.458
+development-L03C03-equations-7 answer=A correct=True seconds=0.460
+development-L18C05-grouped-7 answer=B correct=True seconds=0.372
+development-L28C07-equations-6 answer=UNKNOWN correct=False seconds=0.460
+development-L18C02-table-7 answer=B correct=False seconds=0.373
+development-L13C07-table-7 answer=B correct=True seconds=0.375
+development-L28C07-table-6 answer=B correct=True seconds=0.383
+development-L23C01-table-6 answer=B correct=True seconds=0.358
+development-L08C04-grouped-7 answer=B correct=False seconds=0.366
+development-L13C06-table-7 answer=B correct=True seconds=0.355
+development-L08C04-equations-6 answer=B correct=False seconds=0.458
+development-L03C00-grouped-6 answer=B correct=False seconds=0.367
+development-L08C06-grouped-6 answer=B correct=False seconds=0.379
+development-L03C07-equations-7 answer=B correct=True seconds=0.463
+development-L28C01-table-6 answer=B correct=False seconds=0.365
+development-L08C01-table-7 answer=B correct=True seconds=0.412
+development-L08C04-table-6 answer=B correct=False seconds=0.371
+development-L23C07-grouped-7 answer=B correct=False seconds=0.374
+development-L08C07-table-7 answer=B correct=True seconds=0.377
+development-L08C07-grouped-6 answer=B correct=True seconds=0.375
+development-L28C00-table-7 answer=A correct=True seconds=0.411
+development-L13C00-equations-6 answer=B correct=False seconds=0.488
+development-L08C00-equations-6 answer=B correct=False seconds=0.461
+development-L28C04-equations-7 answer=A correct=True seconds=0.464
+development-L28C01-equations-6 answer=B correct=False seconds=0.459
+development-L23C00-table-6 answer=B correct=True seconds=0.357
+development-L08C07-equations-7 answer=B correct=True seconds=0.471
+development-L28C02-equations-6 answer=B correct=True seconds=0.464
+development-L13C07-grouped-6 answer=B correct=True seconds=0.383
+development-L13C01-equations-7 answer=A correct=True seconds=0.484
+development-L03C03-table-6 answer=B correct=False seconds=0.371
+development-L18C05-table-6 answer=B correct=True seconds=0.376
+development-L18C01-table-7 answer=A correct=True seconds=0.389
+development-L28C02-table-6 answer=B correct=True seconds=0.368
+development-L03C02-equations-6 answer=B correct=False seconds=0.471
+development-L08C04-equations-7 answer=B correct=False seconds=0.477
+development-L13C02-equations-6 answer=B correct=True seconds=0.467
+development-L28C00-grouped-6 answer=A correct=True seconds=0.390
+development-L13C04-grouped-7 answer=B correct=True seconds=0.368
+development-L03C02-table-7 answer=B correct=False seconds=0.382
+development-L28C06-table-7 answer=B correct=False seconds=0.355
+development-L08C03-grouped-7 answer=B correct=False seconds=0.387
+development-L13C04-table-6 answer=B correct=True seconds=0.379
+development-L28C04-equations-6 answer=A correct=True seconds=0.486
+development-L03C05-table-7 answer=B correct=True seconds=0.380
+development-L03C04-grouped-7 answer=B correct=True seconds=0.382
+development-L08C06-table-7 answer=B correct=False seconds=0.394
+development-L18C03-table-7 answer=B correct=True seconds=0.412
+development-L28C05-grouped-7 answer=B correct=True seconds=0.371
+development-L13C02-table-6 answer=B correct=True seconds=0.374
+development-L18C07-equations-6 answer=B correct=True seconds=0.459
+development-L13C04-equations-6 answer=B correct=True seconds=0.475
+development-L18C04-grouped-6 answer=B correct=False seconds=0.370
+development-L08C00-table-6 answer=B correct=False seconds=0.380
+development-L28C05-equations-7 answer=B correct=True seconds=0.464
+development-L23C03-equations-6 answer=B correct=True seconds=0.462
+development-L08C06-grouped-7 answer=B correct=False seconds=0.371
+development-L28C03-grouped-6 answer=A correct=False seconds=0.383
+development-L08C04-grouped-6 answer=B correct=False seconds=0.371
+development-L18C06-grouped-6 answer=B correct=False seconds=0.388
+development-L13C03-equations-7 answer=B correct=True seconds=0.468
+development-L18C02-table-6 answer=B correct=False seconds=0.391
+development-L28C04-table-6 answer=A correct=True seconds=0.378
+development-L18C04-equations-6 answer=B correct=False seconds=0.486
+development-L23C00-grouped-7 answer=B correct=True seconds=0.353
+development-L13C02-table-7 answer=B correct=True seconds=0.389
+development-L23C05-table-6 answer=B correct=True seconds=0.368
+development-L18C03-table-6 answer=B correct=True seconds=0.426
+development-L23C06-table-7 answer=B correct=True seconds=0.372
+development-L13C07-table-6 answer=B correct=True seconds=0.393
+development-L03C03-grouped-7 answer=B correct=False seconds=0.384
+development-L23C01-equations-7 answer=B correct=True seconds=0.475
+development-L08C01-grouped-7 answer=B correct=True seconds=0.392
+development-L23C00-table-7 answer=B correct=True seconds=0.372
+development-L18C06-equations-7 answer=B correct=False seconds=0.484
+development-L23C05-equations-7 answer=B correct=True seconds=0.477
+development-L13C03-grouped-7 answer=A correct=False seconds=0.389
+development-L03C05-grouped-6 answer=B correct=True seconds=0.370
+development-L03C06-table-6 answer=B correct=True seconds=0.373
+development-L23C04-grouped-7 answer=B correct=False seconds=0.391
+development-L13C02-grouped-7 answer=B correct=True seconds=0.381
+development-L28C07-grouped-7 answer=B correct=True seconds=0.380
+development-L28C00-equations-6 answer=A correct=True seconds=0.494
+development-L28C02-equations-7 answer=B correct=True seconds=0.445
+development-L03C07-equations-6 answer=B correct=True seconds=0.444
+development-L03C04-grouped-6 answer=B correct=True seconds=0.368
+development-L23C06-equations-7 answer=B correct=True seconds=0.485
+development-L18C00-equations-7 answer=B correct=False seconds=0.481
+development-L08C07-equations-6 answer=B correct=True seconds=0.489
+development-L18C04-grouped-7 answer=B correct=False seconds=0.385
+development-L13C05-table-7 answer=B correct=True seconds=0.374
+development-L28C01-equations-7 answer=B correct=False seconds=0.481
+development-L13C07-grouped-7 answer=B correct=True seconds=0.374
+development-L23C02-grouped-7 answer=B correct=False seconds=0.359
+development-L18C03-grouped-6 answer=B correct=True seconds=0.393
+development-L18C07-grouped-6 answer=B correct=True seconds=0.372
+development-L13C05-table-6 answer=B correct=True seconds=0.386
+development-L28C02-table-7 answer=B correct=True seconds=0.362
+development-L13C00-table-7 answer=B correct=False seconds=0.413
+development-L23C02-equations-6 answer=B correct=False seconds=0.459
+development-L03C04-table-6 answer=B correct=True seconds=0.388
+development-L03C07-table-7 answer=B correct=True seconds=0.359
+development-L23C06-grouped-6 answer=B correct=True seconds=0.385
+development-L18C01-grouped-6 answer=B correct=False seconds=0.377
+development-L18C00-grouped-7 answer=B correct=False seconds=0.362
+development-L13C05-grouped-7 answer=B correct=True seconds=0.381
+development-L08C06-equations-7 answer=B correct=False seconds=0.485
+development-L23C02-grouped-6 answer=B correct=False seconds=0.370
+development-L03C00-table-6 answer=B correct=False seconds=0.372
+development-L23C01-grouped-7 answer=B correct=True seconds=0.359
+development-L13C03-grouped-6 answer=A correct=False seconds=0.382
+development-L18C00-grouped-6 answer=B correct=False seconds=0.373
+development-L23C05-grouped-6 answer=B correct=True seconds=0.371
+development-L28C02-grouped-6 answer=A correct=False seconds=0.358
+development-L18C01-equations-7 answer=A correct=True seconds=0.471
+development-L23C03-grouped-6 answer=B correct=True seconds=0.382
+development-L03C04-table-7 answer=B correct=True seconds=0.377
+development-L08C05-table-6 answer=B correct=True seconds=0.379
+development-L03C01-equations-6 answer=B correct=True seconds=0.464
+development-L28C01-table-7 answer=B correct=False seconds=0.387
+development-L03C06-grouped-6 answer=B correct=True seconds=0.383
+development-L03C02-equations-7 answer=B correct=False seconds=0.493
+development-L13C03-table-6 answer=B correct=True seconds=0.393
+development-L03C05-grouped-7 answer=B correct=True seconds=0.359
+development-L08C01-grouped-6 answer=B correct=True seconds=0.380
+development-L23C04-equations-6 answer=B correct=False seconds=0.484
+development-L28C00-equations-7 answer=A correct=True seconds=0.512
+development-L08C03-table-7 answer=B correct=False seconds=0.394
+development-L28C04-grouped-6 answer=B correct=False seconds=0.384
+development-L08C02-table-7 answer=A correct=True seconds=0.376
+development-L13C02-equations-7 answer=B correct=True seconds=0.488
+development-L03C05-table-6 answer=B correct=True seconds=0.372
+development-L28C00-table-6 answer=A correct=True seconds=0.428
+development-L03C01-table-7 answer=A correct=False seconds=0.373
+development-L08C00-equations-7 answer=B correct=False seconds=0.490
+development-L23C00-equations-7 answer=B correct=True seconds=0.481
+development-L03C04-equations-7 answer=B correct=True seconds=0.469
+development-L13C07-equations-6 answer=B correct=True seconds=0.470
+development-L23C07-equations-7 answer=B correct=False seconds=0.493
+development-L08C00-table-7 answer=B correct=False seconds=0.393
+development-L23C07-equations-6 answer=B correct=False seconds=0.474
+development-L13C00-equations-7 answer=B correct=False seconds=0.491
+development-L13C02-grouped-6 answer=B correct=True seconds=0.387
+development-L03C01-grouped-6 answer=B correct=True seconds=0.383
+development-L23C06-grouped-7 answer=B correct=True seconds=0.372
+development-L18C05-grouped-6 answer=B correct=True seconds=0.392
+development-L08C03-grouped-6 answer=B correct=False seconds=0.379
+development-L18C03-grouped-7 answer=B correct=True seconds=0.384
+development-L03C07-grouped-6 answer=B correct=True seconds=0.364
+development-L23C01-grouped-6 answer=B correct=True seconds=0.372
+development-L08C05-grouped-7 answer=B correct=True seconds=0.388
+development-L28C02-grouped-7 answer=B correct=True seconds=0.371
+development-L18C01-table-6 answer=A correct=True seconds=0.380
+development-L13C00-grouped-6 answer=B correct=False seconds=0.381
+development-L13C06-grouped-7 answer=B correct=True seconds=0.363
+development-L23C06-equations-6 answer=B correct=True seconds=0.464
+development-L03C03-grouped-6 answer=B correct=False seconds=0.369
+development-L23C03-table-7 answer=B correct=True seconds=0.375
+development-L18C01-grouped-7 answer=B correct=False seconds=0.394
+development-L13C01-table-6 answer=A correct=True seconds=0.395
+development-L28C07-table-7 answer=B correct=True seconds=0.378
+development-L18C07-equations-7 answer=B correct=True seconds=0.482
+development-L03C00-equations-6 answer=B correct=False seconds=0.485
+development-L08C03-table-6 answer=B correct=False seconds=0.377
+development-L13C00-table-6 answer=B correct=False seconds=0.396
+development-L23C04-equations-7 answer=A correct=True seconds=0.467
+development-L28C07-grouped-6 answer=B correct=True seconds=0.386
+development-L08C03-equations-7 answer=B correct=False seconds=0.475
+development-L08C02-table-6 answer=A correct=True seconds=0.391
+development-L08C00-grouped-6 answer=B correct=False seconds=0.389
+development-L28C03-equations-7 answer=B correct=True seconds=0.489
+development-L13C04-table-7 answer=B correct=True seconds=0.375
+development-L23C06-table-6 answer=B correct=True seconds=0.391
+calibration-L17C01-equations-7 answer=B correct=True seconds=0.476
+calibration-L17C03-equations-7 answer=B correct=False seconds=0.453
+calibration-L33C03-equations-6 answer=B correct=True seconds=0.472
+calibration-L00C07-equations-6 answer=B correct=False seconds=0.469
+calibration-L00C07-equations-7 answer=B correct=False seconds=0.487
+calibration-L33C00-equations-7 answer=B correct=False seconds=0.469
+calibration-L00C02-equations-6 answer=A correct=True seconds=0.473
+calibration-L11C02-equations-6 answer=B correct=True seconds=0.489
+calibration-L11C00-equations-7 answer=B correct=False seconds=0.484
+calibration-L33C07-equations-6 answer=B correct=True seconds=0.468
+calibration-L11C05-equations-6 answer=A correct=True seconds=0.493
+calibration-L17C04-equations-6 answer=A correct=False seconds=0.467
+calibration-L17C00-equations-7 answer=B correct=False seconds=0.488
+calibration-L11C01-equations-6 answer=B correct=True seconds=0.485
+calibration-L00C03-equations-6 answer=B correct=True seconds=0.477
+calibration-L33C06-equations-7 answer=B correct=True seconds=0.473
+calibration-L00C06-equations-7 answer=B correct=True seconds=0.467
+calibration-L11C04-equations-6 answer=B correct=True seconds=0.493
+calibration-L33C00-equations-6 answer=B correct=False seconds=0.493
+calibration-L11C07-equations-7 answer=B correct=False seconds=0.492
+calibration-L11C02-equations-7 answer=B correct=True seconds=0.471
+calibration-L17C05-equations-7 answer=B correct=True seconds=0.467
+calibration-L17C05-equations-6 answer=B correct=True seconds=0.489
+calibration-L00C06-equations-6 answer=B correct=True seconds=0.449
+calibration-L17C03-equations-6 answer=B correct=False seconds=0.471
+calibration-L00C05-equations-6 answer=B correct=True seconds=0.485
+calibration-L17C02-equations-6 answer=B correct=False seconds=0.472
+calibration-L00C05-equations-7 answer=B correct=True seconds=0.462
+calibration-L17C02-equations-7 answer=B correct=False seconds=0.450
+calibration-L17C01-equations-6 answer=B correct=True seconds=0.495
+calibration-L33C05-equations-6 answer=UNKNOWN correct=False seconds=0.513
+calibration-L00C01-equations-6 answer=B correct=False seconds=0.455
+calibration-L33C02-equations-7 answer=B correct=False seconds=0.490
+calibration-L33C04-equations-7 answer=B correct=False seconds=0.514
+calibration-L17C00-equations-6 answer=B correct=False seconds=0.469
+calibration-L33C06-equations-6 answer=B correct=True seconds=0.491
+calibration-L11C00-equations-6 answer=B correct=False seconds=0.466
+calibration-L11C06-equations-7 answer=B correct=False seconds=0.491
+calibration-L00C03-equations-7 answer=A correct=False seconds=0.496
+calibration-L17C04-equations-7 answer=A correct=False seconds=0.485
+calibration-L00C00-equations-6 answer=B correct=True seconds=0.475
+calibration-L00C04-equations-7 answer=B correct=False seconds=0.473
+calibration-L00C02-equations-7 answer=A correct=True seconds=0.492
+calibration-L11C03-equations-7 answer=A correct=False seconds=0.472
+calibration-L00C04-equations-6 answer=B correct=False seconds=0.491
+calibration-L33C05-equations-7 answer=B correct=True seconds=0.492
+calibration-L33C04-equations-6 answer=B correct=False seconds=0.495
+calibration-L17C06-equations-6 answer=B correct=False seconds=0.450
+calibration-L17C06-equations-7 answer=A correct=True seconds=0.480
+calibration-L11C04-equations-7 answer=B correct=True seconds=0.469
+calibration-L11C06-equations-6 answer=B correct=False seconds=0.468
+calibration-L33C01-equations-7 answer=B correct=True seconds=0.474
+calibration-L17C07-equations-7 answer=A correct=True seconds=0.495
+calibration-L00C00-equations-7 answer=B correct=True seconds=0.496
+calibration-L11C05-equations-7 answer=A correct=True seconds=0.476
+calibration-L33C01-equations-6 answer=B correct=True seconds=0.491
+calibration-L11C07-equations-6 answer=B correct=False seconds=0.470
+calibration-L33C03-equations-7 answer=A correct=False seconds=0.465
+calibration-L33C07-equations-7 answer=B correct=True seconds=0.488
+calibration-L17C07-equations-6 answer=A correct=True seconds=0.522
+calibration-L11C01-equations-7 answer=B correct=True seconds=0.467
+calibration-L00C01-equations-7 answer=A correct=True seconds=0.482
+calibration-L33C02-equations-6 answer=B correct=False seconds=0.471
+calibration-L11C03-equations-6 answer=UNKNOWN correct=False seconds=0.492
+{'status': 'stopped_baseline_failure', 'selected_format': 'equations', 'development_accuracies': {'table': 0.6145833333333334, 'equations': 0.6354166666666666, 'grouped': 0.59375}, 'calibration_accuracy': 0.515625, 'correct': 33, 'denominator': 64, 'uncertain': 2, 'minimum_accuracy': 0.8, 'main_experiment_authorized_by_gate': False, 'calibration_truth_counts': {'A': 32, 'B': 32}, 'load_seconds': 6.9482017120026285, 'score_calls': 352, 'median_score_seconds': 0.3929738679944421, 'p90_score_seconds': 0.4881587510026293, 'estimated_main_score_hours': 1.0898475272379196, 'estimated_main_p90_hours': 1.3538269361139585, 'limitation': 'Scoring time only; excludes loading, preservation, prose, IO, implementation and retries.', 'stop_reason': 'A stable >=80% independent baseline was not established. Do not run attacks or infer weight-analysis efficacy.'}

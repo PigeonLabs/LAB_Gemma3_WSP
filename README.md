@@ -2,7 +2,9 @@
 
 **행동을 보존하는 가중치 편집으로 외부 설명자의 판단을 바꿀 수 있는가?**
 
-**본실험 v1:** 사전등록 완료. [프로토콜](docs/STUDY_V1.md) · [실행 보고서](artifacts/study_v1/REPORT.md).
+**본실험 v1:** 사전등록 완료. [프로토콜](docs/STUDY_V1.md) · [실행 보고서](artifacts/study_v1/REPORT.md). 교정 정확도 **33/64 (51.6%)**, 상태 `stopped_baseline_failure`. 사전등록한 80% 기준에 미달하여 본 공격 실험은 중단했습니다.
+
+![교정 형식별 정확도와 사전등록 기준](docs/figures/study_calibration.svg)
 
 [상세 결과](RESULTS.md) · [실험 프로토콜](docs/EXPERIMENT_PROTOCOL.md) · [원본 로그·결과](artifacts/) · [자동 기록·업로드](docs/PUBLICATION.md)
 
@@ -101,6 +103,7 @@ greedy 생성**을 비교했다. 표의 분모는 각 검사에 사용한 입력
 | v1-preregister | complete | 2026-11-03T13:24:04.305999+00:00 | [log](artifacts/stages/20261103T132403936425Z-v1-preregister.log) · [record](artifacts/stages/20261103T132403936425Z-v1-preregister.json) |
 | v1-extract | complete | 2026-11-03T13:24:28.731682+00:00 | [log](artifacts/stages/20261103T132422678297Z-v1-extract.log) · [record](artifacts/stages/20261103T132422678297Z-v1-extract.json) |
 | v1-readiness-tests | complete | 2026-11-03T13:25:27.801506+00:00 | [log](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.log) · [record](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.json) |
+| v1-calibrate | complete | 2026-11-03T13:29:33.276291+00:00 | [log](artifacts/stages/20261103T132555846747Z-v1-calibrate.log) · [record](artifacts/stages/20261103T132555846747Z-v1-calibrate.json) |
 
 실행 상태와 업로드 상태는 구분한다. GitHub의 파일과 커밋이 공개된 증거이며,
 로컬 전송 대기·확인 영수증은 `.publication/`에 보관한다.

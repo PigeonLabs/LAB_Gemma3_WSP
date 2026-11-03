@@ -20,6 +20,9 @@ def build(root=ROOT):
                               f"({result['calibration_accuracy']:.1%})**, 상태 `{result['status']}`.")
             if result['status'] != 'passed':
                 study_summary += ' 사전등록한 80% 기준에 미달하여 본 공격 실험은 중단했습니다.'
+            from render_calibration import render
+            render(root, result)
+            study_summary += '\n\n![교정 형식별 정확도와 사전등록 기준](docs/figures/study_calibration.svg)'
     conditions = ['original', 'structure_only', 'random_locations',
                   'weight_informed', 'location_shuffled']
     pilot_path = root / 'artifacts/circuit_forced_choice.json'

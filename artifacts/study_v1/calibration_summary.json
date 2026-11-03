@@ -1,0 +1,27 @@
+{
+  "status": "stopped_baseline_failure",
+  "selected_format": "equations",
+  "development_accuracies": {
+    "table": 0.6145833333333334,
+    "equations": 0.6354166666666666,
+    "grouped": 0.59375
+  },
+  "calibration_accuracy": 0.515625,
+  "correct": 33,
+  "denominator": 64,
+  "uncertain": 2,
+  "minimum_accuracy": 0.8,
+  "main_experiment_authorized_by_gate": false,
+  "calibration_truth_counts": {
+    "A": 32,
+    "B": 32
+  },
+  "load_seconds": 6.9482017120026285,
+  "score_calls": 352,
+  "median_score_seconds": 0.3929738679944421,
+  "p90_score_seconds": 0.4881587510026293,
+  "estimated_main_score_hours": 1.0898475272379196,
+  "estimated_main_p90_hours": 1.3538269361139585,
+  "limitation": "Scoring time only; excludes loading, preservation, prose, IO, implementation and retries.",
+  "stop_reason": "A stable >=80% independent baseline was not established. Do not run attacks or infer weight-analysis efficacy."
+}

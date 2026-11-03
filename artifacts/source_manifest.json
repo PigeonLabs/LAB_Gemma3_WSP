@@ -1,8 +1,9 @@
 {
-  "scripts/build_readme.py": "58afb4b7c4f043aed334988ae9c8346000e57437769111837766017aa1438bfe",
+  "scripts/build_readme.py": "082c2b87f95887b3d8740cd5fa570e479e97645e80e27c209f856c071c0eb3ed",
   "scripts/run_preflight.py": "81523cd1f98bb6c3016fb9cf3e6e63fad3c59a5c41b6f791cff8614480b1f415",
   "scripts/run_circuit_pilot.py": "b4a8012541b996879d13607c8692369dd45ea21b31e162b081169344cf2e7c19",
   "scripts/download_model.py": "4d3cede06e48f7bc8f89f576bca9a6edd6519760fdb888e58f63cfc80ceaff3b",
+  "scripts/render_calibration.py": "79cd4636ff185497e66b2d1407dfee33379fc3a548e036f0e9a9c6be5a9c3db6",
   "scripts/summarize.py": "7b5d067267d8d30ccc671407872aea51405bc0678ec56f5c803042e2c89c526e",
   "scripts/publication.py": "d3b4c117e48555eccf64b0c88726e4278256e9e262248f7135716977e8150706",
   "scripts/run_stage.py": "e60fd0e0c338d1f9e343cc15bc0ecc50df473b2f7e243002c21799e415897a04",
