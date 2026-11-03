@@ -21,7 +21,7 @@ flowchart LR
 
 | 단계 | 저장된 상태 |
 |---|---|
-| dataset | 미완료 |
+| dataset | [complete](artifacts/study_v2/dataset_summary.json) |
 | diagnostic | 미완료 |
 | development | 미완료 |
 | calibration | 미완료 |
@@ -36,3 +36,4 @@ flowchart LR
 |---|---|---|
 | v2-unit-tests | complete | [원본](artifacts/stages/20261103T141418629140Z-v2-unit-tests.log) |
 | v2-preregister | complete | [원본](artifacts/stages/20261103T141509447572Z-v2-preregister.log) |
+| v2-extract | complete | [원본](artifacts/stages/20261103T141541647895Z-v2-extract.log) |
