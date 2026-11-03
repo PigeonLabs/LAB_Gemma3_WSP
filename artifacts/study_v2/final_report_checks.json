@@ -1,0 +1,9 @@
+{
+  "raw_episodes": 640,
+  "raw_hashes_unchanged": true,
+  "v1_and_v2_frozen_sources_unchanged": true,
+  "development_and_independent_calibration_not_run": true,
+  "thresholds_unchanged": true,
+  "recurring_automation_created": false,
+  "posthoc_non_tie_sensitivity_only": true
+}

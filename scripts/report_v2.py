@@ -29,12 +29,18 @@ def build():
         status=('완료 (세부 수치는 원본 JSON)' if name=='diagnostic' else r.get('status','완료')) if r else '미완료'
         lines.append(f'| {name} | '+(f'[{status}](artifacts/study_v2/{name}_summary.json)' if r else status)+' |')
     if 'diagnostic' in summaries:
-        plot='v2_diagnostics_measured.svg' if (root_plot:=ROOT/'docs/figures/v2_diagnostics_measured.svg').exists() else 'v2_diagnostics.svg'
+        plot='v2_diagnostics_measured.svg' if (ROOT/'docs/figures/v2_diagnostics_measured.svg').exists() else 'v2_diagnostics.svg'
         lines+=['','[진단 상세 보고서](artifacts/study_v2/DIAGNOSTIC_REPORT.md)',
                 '', f'![진단 결과](docs/figures/{plot})']
         if (PUBLIC/'DIAGNOSTIC_AUDIT.md').exists():
             lines+=['','**진단 원인 분석:** [응답 편향·수치 오류·도구 인터페이스 감사](artifacts/study_v2/DIAGNOSTIC_AUDIT.md). '
                 '독립 교정과 본 공격 평가는 미실행이며 80% 기준은 유지합니다. 사용자 선택에 따라 후속 실험을 자동 시작하지 않습니다.']
+            lines+=['', '| 동일한 16뉴런 진단 (각 64건) | 답 정확도 | 답+두 영향값 모두 정확 |',
+                '|---|---:|---:|','| D0 즉시 선택 | 53.1% | 수치 미요구 |',
+                '| D1 생성 계산 | 50.0% | 0% |','| D2 제한 산술 도구 | 0% (전부 INVALID) | 0% |',
+                '| D3 정확한 함수 값 제공 | 56.25% | 0% |',
+                '', '전체 640건은 약 **3시간 32분**에 완료했습니다. 8/4뉴런 진단의 동률 사례는 별도 보조 분석에 표시했습니다. '
+                '두 참고 자료는 [적용 범위 문서](docs/V2_REFERENCE_NOTES.md)에 반영했습니다.']
     lines+=['','![교정 결과; 완료된 구성만 표시](docs/figures/v2_calibration.svg)','',
         '원자료: [v2 폴더](artifacts/study_v2). 즉시 선택·도구 계산·정확값 제공을 구분하며, 형식 실패는 정답으로 세지 않습니다.',
         '', '참고: [Neural Networks Are Already Clean](https://already-clean.goodfire.com/) · '

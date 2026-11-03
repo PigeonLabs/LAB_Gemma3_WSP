@@ -32,6 +32,15 @@ flowchart LR
 
 **진단 원인 분석:** [응답 편향·수치 오류·도구 인터페이스 감사](artifacts/study_v2/DIAGNOSTIC_AUDIT.md). 독립 교정과 본 공격 평가는 미실행이며 80% 기준은 유지합니다. 사용자 선택에 따라 후속 실험을 자동 시작하지 않습니다.
 
+| 동일한 16뉴런 진단 (각 64건) | 답 정확도 | 답+두 영향값 모두 정확 |
+|---|---:|---:|
+| D0 즉시 선택 | 53.1% | 수치 미요구 |
+| D1 생성 계산 | 50.0% | 0% |
+| D2 제한 산술 도구 | 0% (전부 INVALID) | 0% |
+| D3 정확한 함수 값 제공 | 56.25% | 0% |
+
+전체 640건은 약 **3시간 32분**에 완료했습니다. 8/4뉴런 진단의 동률 사례는 별도 보조 분석에 표시했습니다. 두 참고 자료는 [적용 범위 문서](docs/V2_REFERENCE_NOTES.md)에 반영했습니다.
+
 ![교정 결과; 완료된 구성만 표시](docs/figures/v2_calibration.svg)
 
 원자료: [v2 폴더](artifacts/study_v2). 즉시 선택·도구 계산·정확값 제공을 구분하며, 형식 실패는 정답으로 세지 않습니다.
@@ -45,3 +54,4 @@ flowchart LR
 | v2-extract | complete | [원본](artifacts/stages/20261103T141541647895Z-v2-extract.log) |
 | v2-diagnose | complete | [원본](artifacts/stages/20261103T141642125117Z-v2-diagnose.log) |
 | v2-diagnostic-audit | complete | [원본](artifacts/stages/20261103T175219278795Z-v2-diagnostic-audit.log) |
+| v2-final-report | complete | [원본](artifacts/stages/20261103T175736172780Z-v2-final-report.log) |

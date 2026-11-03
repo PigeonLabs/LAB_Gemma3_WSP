@@ -1,0 +1,2 @@
+{"command": ["/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/bin/python", "scripts/finalize_v2_diagnostics.py"], "started_at": "2026-11-03T17:57:36.172800+00:00"}
+Final report generated; raw data and frozen sources unchanged; no further model inference.
