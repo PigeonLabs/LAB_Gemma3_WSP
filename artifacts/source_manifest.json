@@ -5,6 +5,7 @@
   "scripts/download_model.py": "4d3cede06e48f7bc8f89f576bca9a6edd6519760fdb888e58f63cfc80ceaff3b",
   "scripts/render_calibration.py": "79cd4636ff185497e66b2d1407dfee33379fc3a548e036f0e9a9c6be5a9c3db6",
   "scripts/summarize.py": "7b5d067267d8d30ccc671407872aea51405bc0678ec56f5c803042e2c89c526e",
+  "scripts/audit_study_stop.py": "fdfabf4bc7481ad18e07e7d12b5e52dd7f96d4bc05e813e2c65e3992a957a957",
   "scripts/publication.py": "d3b4c117e48555eccf64b0c88726e4278256e9e262248f7135716977e8150706",
   "scripts/run_stage.py": "e60fd0e0c338d1f9e343cc15bc0ecc50df473b2f7e243002c21799e415897a04",
   "scripts/run_study.py": "3f7231940ce5319feb92f4943a364407457e3f5c658ea3c0fcc0ea7b64676870",

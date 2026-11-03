@@ -105,6 +105,7 @@ greedy 생성**을 비교했다. 표의 분모는 각 검사에 사용한 입력
 | v1-readiness-tests | complete | 2026-11-03T13:25:27.801506+00:00 | [log](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.log) · [record](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.json) |
 | v1-calibrate | complete | 2026-11-03T13:29:33.276291+00:00 | [log](artifacts/stages/20261103T132555846747Z-v1-calibrate.log) · [record](artifacts/stages/20261103T132555846747Z-v1-calibrate.json) |
 | v1-power-sensitivity | complete | 2026-11-03T13:30:42.421567+00:00 | [log](artifacts/stages/20261103T133041138169Z-v1-power-sensitivity.log) · [record](artifacts/stages/20261103T133041138169Z-v1-power-sensitivity.json) |
+| v1-stop-audit | complete | 2026-11-03T13:32:55.179613+00:00 | [log](artifacts/stages/20261103T133234122539Z-v1-stop-audit.log) · [record](artifacts/stages/20261103T133234122539Z-v1-stop-audit.json) |
 
 실행 상태와 업로드 상태는 구분한다. GitHub의 파일과 커밋이 공개된 증거이며,
 로컬 전송 대기·확인 영수증은 `.publication/`에 보관한다.

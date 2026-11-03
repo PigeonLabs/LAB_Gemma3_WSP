@@ -1,0 +1,10 @@
+{"command": ["/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/bin/python", "scripts/audit_study_stop.py"], "started_at": "2026-11-03T13:32:34.122554+00:00"}
+prepare: correctly refused before target inference
+preserve-bf16: correctly refused before target inference
+preserve-fp32: correctly refused before target inference
+main: correctly refused before target inference
+prose: correctly refused before target inference
+analyze: correctly refused before target inference
+interventions: correctly refused before target inference
+semantic: correctly refused before target inference
+STOP_AUDIT_PASSED

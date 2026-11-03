@@ -1,0 +1,83 @@
+{
+  "status": "verified",
+  "calibration_trials": 352,
+  "unique_calibration_circuits": 32,
+  "calibration_answers": 64,
+  "entrypoint_gates": [
+    {
+      "stage": "prepare",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "preserve-bf16",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "preserve-fp32",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "main",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "prose",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "analyze",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "interventions",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    },
+    {
+      "stage": "semantic",
+      "refused_by_calibration_gate": true,
+      "exit_code": 1
+    }
+  ],
+  "main_results_created": false,
+  "test_circuit_contents_published": false,
+  "completed_stage_wall_seconds": [
+    {
+      "stage": "v1-implementation-tests",
+      "seconds": 4.346936,
+      "status": "complete"
+    },
+    {
+      "stage": "v1-preregister",
+      "seconds": 0.369559,
+      "status": "complete"
+    },
+    {
+      "stage": "v1-extract",
+      "seconds": 6.05337,
+      "status": "complete"
+    },
+    {
+      "stage": "v1-readiness-tests",
+      "seconds": 3.565196,
+      "status": "complete"
+    },
+    {
+      "stage": "v1-calibrate",
+      "seconds": 217.429527,
+      "status": "complete"
+    },
+    {
+      "stage": "v1-power-sensitivity",
+      "seconds": 1.283384,
+      "status": "complete"
+    }
+  ],
+  "note": "Stage durations include process startup; manual implementation and GitHub transfer are not included."
+}
