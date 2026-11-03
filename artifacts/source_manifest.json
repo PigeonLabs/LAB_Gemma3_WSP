@@ -1,0 +1,16 @@
+{
+  "scripts/build_readme.py": "c9c67bb78f72d1fc7ffc3a87cc50d9c5887d7ec84b51a5d9957e3d7331fd08c9",
+  "scripts/run_preflight.py": "81523cd1f98bb6c3016fb9cf3e6e63fad3c59a5c41b6f791cff8614480b1f415",
+  "scripts/run_circuit_pilot.py": "b4a8012541b996879d13607c8692369dd45ea21b31e162b081169344cf2e7c19",
+  "scripts/download_model.py": "4d3cede06e48f7bc8f89f576bca9a6edd6519760fdb888e58f63cfc80ceaff3b",
+  "scripts/summarize.py": "7b5d067267d8d30ccc671407872aea51405bc0678ec56f5c803042e2c89c526e",
+  "scripts/publication.py": "1a834f188eea9221acc524ce1ae4bf300f6912a7ee8c7e8eac2c38049b1d5ac3",
+  "scripts/run_stage.py": "e60fd0e0c338d1f9e343cc15bc0ecc50df473b2f7e243002c21799e415897a04",
+  "scripts/inspect_weights.py": "792fc8247a4c9a166f57f4e7399f5e75a358c40aba0d8d063912981208bf4a52",
+  "wsp/__init__.py": "e52a2f22f987b106f983751beac5658f5ddcd5e3b32294ad351a10ac47767f35",
+  "wsp/edits.py": "53cfe00d2dd19acb3abac5ec072628826b0308518f9986059294c0f3dc2ae0bc",
+  "tests/test_edits.py": "4f67c9a32c42f93ff92b890cdb2626e74fee826271674b2a09592495e70ed214",
+  "tests/test_publication.py": "204e354133a330398ab7726eec6050e6112bdbc69cbed85118cf4d33b33a3459",
+  "plans/structure_only.json": "33f6da4bb71a25dd45302a2e95dce0fd3b6d32070645582d7869a0d7c1c0049d",
+  "plans/weight_informed.json": "29dd6eaa563b8d430a36f42f0445ca8bf13b8a14aadf765b31052ca4a7b216d9"
+}

@@ -1,0 +1,251 @@
+{
+  "_id": "67d148e76bd6c57bab1bbae8",
+  "id": "unsloth/gemma-3-4b-it",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "unsloth",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 52526,
+  "likes": 28,
+  "modelId": "unsloth/gemma-3-4b-it",
+  "author": "unsloth",
+  "sha": "bf46152c47f5dd20b896357cb51abc4c03b8ee8c",
+  "lastModified": "2025-05-12T07:54:39.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "Gemma3ForConditionalGeneration"
+    ],
+    "model_type": "gemma3",
+    "tokenizer_config": {
+      "use_default_system_prompt": false,
+      "bos_token": "<bos>",
+      "eos_token": "<end_of_turn>",
+      "unk_token": "<unk>",
+      "pad_token": "<pad>",
+      "chat_template": "{{ bos_token }}\n{%- if messages[0]['role'] == 'system' -%}\n    {%- if messages[0]['content'] is string -%}\n        {%- set first_user_prefix = messages[0]['content'] + '\n\n' -%}\n    {%- else -%}\n        {%- set first_user_prefix = messages[0]['content'][0]['text'] + '\n\n' -%}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {%- set first_user_prefix = \"\" -%}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n{%- for message in loop_messages -%}\n    {%- if (message['role'] == 'user') != (loop.index0 % 2 == 0) -%}\n        {{ raise_exception(\"Conversation roles must alternate user/assistant/user/assistant/...\") }}\n    {%- endif -%}\n    {%- if (message['role'] == 'assistant') -%}\n        {%- set role = \"model\" -%}\n    {%- else -%}\n        {%- set role = message['role'] -%}\n    {%- endif -%}\n    {{ '<start_of_turn>' + role + '\n' + (first_user_prefix if loop.first else \"\") }}\n    {%- if message['content'] is string -%}\n        {{ message['content'] | trim }}\n    {%- elif message['content'] is iterable -%}\n        {%- for item in message['content'] -%}\n            {%- if item['type'] == 'image' -%}\n                {{ '<start_of_image>' }}\n            {%- elif item['type'] == 'text' -%}\n                {{ item['text'] | trim }}\n            {%- endif -%}\n        {%- endfor -%}\n    {%- else -%}\n        {{ raise_exception(\"Invalid content type\") }}\n    {%- endif -%}\n    {{ '<end_of_turn>\n' }}\n{%- endfor -%}\n{%- if add_generation_prompt -%}\n    {{'<start_of_turn>model\n'}}\n{%- endif -%}\n"
+    },
+    "processor_config": {
+      "chat_template": "{{ bos_token }}\n{%- if messages[0]['role'] == 'system' -%}\n    {%- if messages[0]['content'] is string -%}\n        {%- set first_user_prefix = messages[0]['content'] + '\n\n' -%}\n    {%- else -%}\n        {%- set first_user_prefix = messages[0]['content'][0]['text'] + '\n\n' -%}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {%- set first_user_prefix = \"\" -%}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n{%- for message in loop_messages -%}\n    {%- if (message['role'] == 'user') != (loop.index0 % 2 == 0) -%}\n        {{ raise_exception(\"Conversation roles must alternate user/assistant/user/assistant/...\") }}\n    {%- endif -%}\n    {%- if (message['role'] == 'assistant') -%}\n        {%- set role = \"model\" -%}\n    {%- else -%}\n        {%- set role = message['role'] -%}\n    {%- endif -%}\n    {{ '<start_of_turn>' + role + '\n' + (first_user_prefix if loop.first else \"\") }}\n    {%- if message['content'] is string -%}\n        {{ message['content'] | trim }}\n    {%- elif message['content'] is iterable -%}\n        {%- for item in message['content'] -%}\n            {%- if item['type'] == 'image' -%}\n                {{ '<start_of_image>' }}\n            {%- elif item['type'] == 'text' -%}\n                {{ item['text'] | trim }}\n            {%- endif -%}\n        {%- endfor -%}\n    {%- else -%}\n        {{ raise_exception(\"Invalid content type\") }}\n    {%- endif -%}\n    {{ '<end_of_turn>\n' }}\n{%- endfor -%}\n{%- if add_generation_prompt -%}\n    {{'<start_of_turn>model\n'}}\n{%- endif -%}\n"
+    },
+    "chat_template_jinja": "{{ bos_token }}\n{%- if messages[0]['role'] == 'system' -%}\n    {%- if messages[0]['content'] is string -%}\n        {%- set first_user_prefix = messages[0]['content'] + '\n\n' -%}\n    {%- else -%}\n        {%- set first_user_prefix = messages[0]['content'][0]['text'] + '\n\n' -%}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {%- set first_user_prefix = \"\" -%}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n{%- for message in loop_messages -%}\n    {%- if (message['role'] == 'user') != (loop.index0 % 2 == 0) -%}\n        {{ raise_exception(\"Conversation roles must alternate user/assistant/user/assistant/...\") }}\n    {%- endif -%}\n    {%- if (message['role'] == 'assistant') -%}\n        {%- set role = \"model\" -%}\n    {%- else -%}\n        {%- set role = message['role'] -%}\n    {%- endif -%}\n    {{ '<start_of_turn>' + role + '\n' + (first_user_prefix if loop.first else \"\") }}\n    {%- if message['content'] is string -%}\n        {{ message['content'] | trim }}\n    {%- elif message['content'] is iterable -%}\n        {%- for item in message['content'] -%}\n            {%- if item['type'] == 'image' -%}\n                {{ '<start_of_image>' }}\n            {%- elif item['type'] == 'text' -%}\n                {{ item['text'] | trim }}\n            {%- endif -%}\n        {%- endfor -%}\n    {%- else -%}\n        {{ raise_exception(\"Invalid content type\") }}\n    {%- endif -%}\n    {{ '<end_of_turn>\n' }}\n{%- endfor -%}\n{%- if add_generation_prompt -%}\n    {{'<start_of_turn>model\n'}}\n{%- endif -%}\n"
+  },
+  "cardData": {
+    "tags": [
+      "unsloth"
+    ],
+    "license": "gemma",
+    "library_name": "transformers",
+    "pipeline_tag": "image-text-to-text",
+    "extra_gated_heading": "Access Gemma on Hugging Face",
+    "extra_gated_prompt": "To access Gemma on Hugging Face, you\u2019re required to review and agree to Google\u2019s usage license. To do this, please ensure you\u2019re logged in to Hugging Face and click below. Requests are processed immediately.",
+    "extra_gated_button_content": "Acknowledge license",
+    "base_model": [
+      "google/gemma-3-4b-it"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForMultimodalLM",
+    "pipeline_tag": "image-text-to-text",
+    "processor": "AutoProcessor"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "e6d43da7f2cc0124e691f2c7a2092990d8c69838",
+      "size": 1760
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "ee91488ae8bacef88b3c7f2f05edce4af758e9db",
+      "size": 25140
+    },
+    {
+      "rfilename": "added_tokens.json",
+      "blobId": "e17bde03d42feda32d1abfca6d3b598b9a020df7",
+      "size": 35
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "1117055ab8e8c90e1b200be00cddb78943616d9e",
+      "size": 1532
+    },
+    {
+      "rfilename": "chat_template.json",
+      "blobId": "719b0cd0d7a373a400b0c119ee0e051f41ea88d9",
+      "size": 1615
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "4a514e435753caf2c67eb2c282abd379d5021a42",
+      "size": 1659
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "c4400ddce37d459b3517e7431aab4cadd988f4f8",
+      "size": 210
+    },
+    {
+      "rfilename": "model-00001-of-00002.safetensors",
+      "blobId": "325ea0681653014ec8f154acf3cb45e55d7d92ae",
+      "size": 4961251752,
+      "lfs": {
+        "sha256": "eb5fd5e97ddd07b56778733e9653c07312529cb00980a318fc3e1c4e3b5a8f1f",
+        "size": 4961251752,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00002.safetensors",
+      "blobId": "300ab0def99dbee79aa6c1de1f3c76c98852f992",
+      "size": 3639026128,
+      "lfs": {
+        "sha256": "fdde0e5aa5ced0fa203b3d50f4ab78168b7e3a3e08c6349f5cc9326666e1bb13",
+        "size": 3639026128,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "4b95241f208f06d324d17c9675568ec58dafd9fb",
+      "size": 90558
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "b1e00fc184f61b698181821169c6374cd5813e5c",
+      "size": 570
+    },
+    {
+      "rfilename": "processor_config.json",
+      "blobId": "453c7966d4b5d0b4a317c585989f64c58c2a6bf0",
+      "size": 70
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "bdd437b84a1eacd8b8da6a335bb31993e5502259",
+      "size": 670
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "29401f984828a18bb09a6128d437c6766785eb66",
+      "size": 33384568,
+      "lfs": {
+        "sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+        "size": 33384568,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer.model",
+      "blobId": "14f810a829755bae3fafd6f97096dbd2eac556bd",
+      "size": 4689074,
+      "lfs": {
+        "sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+        "size": 4689074,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "9c2583b0aa47578c1bbbb86f1881e8334b42574d",
+      "size": 1158492
+    }
+  ],
+  "spaces": [
+    "bpHigh/carrom_rl_env",
+    "build-small-hackathon/storygrove",
+    "seanpedrickcase/llm_topic_modelling",
+    "narinzar/GemmaXRayAnalyzer_Finetune_Gemma_3_4b",
+    "fyzanshaik/neuralnet_cfmodel",
+    "yarenty/Chat_tester",
+    "Alovestocode/router-router-zero",
+    "ncc01/ZeroGPU-LLM-Inference",
+    "polats/ZeroGPU-LLM-Inference",
+    "wheattoast11/unsloth-training-hub",
+    "cjj-for-ms/Gemma3-CPU",
+    "adityanaikhpt/codeareana",
+    "SnehShah/house-md-env",
+    "ceoavinash/codearena-rl",
+    "SnehShah/house-md-env-openenv",
+    "Tetsuto/11plus-tutor-playground",
+    "IsmailAI/finans-asistani",
+    "pranaysuyash/shopstack",
+    "Harshith69/novapay-support-agent",
+    "yodeput/translategemma",
+    "EricaLuvGemma/Gilgamesh",
+    "Japhari/sdt-gm4-hesabu-flare-demo",
+    "fabricioslv/omnimind-hidden-state-inspector",
+    "Curious-PM/finetune-demo",
+    "Curious-PM/try-your-finetune",
+    "Hieu18012005/num-reasoning-vi-financial",
+    "duonghieu18012005/num-reasoning-vi-financial",
+    "novanandriyono/javanese",
+    "12milo12/JobGuard"
+  ],
+  "createdAt": "2025-03-12T08:42:15.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 4300079472
+    },
+    "total": 4300079472
+  },
+  "usedStorage": 8638351522
+}

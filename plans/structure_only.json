@@ -1,0 +1,12 @@
+{
+  "id": "structure_only_001",
+  "editor": "current Codex assistant",
+  "role": "structure-only reference selected before target tensor inspection",
+  "layer": 17,
+  "units": [0, 1, 2, 3, 4, 5, 6, 7],
+  "factors": [8, 8, 8, 8, 8, 8, 8, 8],
+  "hypothesis": "Increase apparent up-branch salience while exactly compensating in down projection.",
+  "target_weight_analysis_used": false,
+  "explainer_feedback_used": false
+}
+

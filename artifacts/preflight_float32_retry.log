@@ -1,0 +1,19 @@
+loading_model float32
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<10:53,  1.35it/s]Loading weights:   5%|▍         | 42/883 [00:00<00:12, 66.49it/s]Loading weights:   7%|▋         | 65/883 [00:00<00:09, 90.41it/s]Loading weights:  10%|▉         | 85/883 [00:01<00:08, 94.69it/s]Loading weights:  12%|█▏        | 102/883 [00:01<00:07, 108.95it/s]Loading weights:  14%|█▎        | 120/883 [00:01<00:07, 107.15it/s]Loading weights:  15%|█▌        | 135/883 [00:01<00:06, 114.64it/s]Loading weights:  18%|█▊        | 159/883 [00:01<00:05, 122.99it/s]Loading weights:  20%|█▉        | 174/883 [00:01<00:05, 124.18it/s]Loading weights:  22%|██▏       | 198/883 [00:02<00:05, 124.58it/s]Loading weights:  25%|██▌       | 221/883 [00:02<00:04, 142.06it/s]Loading weights:  27%|██▋       | 237/883 [00:02<00:05, 125.12it/s]Loading weights:  30%|██▉       | 263/883 [00:02<00:04, 131.43it/s]Loading weights:  31%|███▏      | 278/883 [00:02<00:04, 133.68it/s]Loading weights:  34%|███▍      | 302/883 [00:02<00:04, 136.55it/s]Loading weights:  36%|███▌      | 316/883 [00:02<00:04, 135.40it/s]Loading weights:  37%|███▋      | 330/883 [00:03<00:04, 132.33it/s]Loading weights:  40%|████      | 354/883 [00:03<00:03, 136.98it/s]Loading weights:  42%|████▏     | 368/883 [00:03<00:03, 133.76it/s]Loading weights:  43%|████▎     | 382/883 [00:03<00:03, 134.94it/s]Loading weights:  46%|████▌     | 406/883 [00:03<00:03, 132.39it/s]Loading weights:  49%|████▉     | 432/883 [00:03<00:03, 132.94it/s]Loading weights:  66%|██████▌   | 583/883 [00:03<00:00, 422.49it/s]Loading weights:  81%|████████  | 713/883 [00:03<00:00, 623.68it/s]Loading weights:  95%|█████████▌| 839/883 [00:04<00:00, 777.49it/s]Loading weights: 100%|██████████| 883/883 [00:04<00:00, 215.18it/s]
+baseline 0 (1, 24, 262208)
+baseline 1 (1, 30, 262208)
+baseline 2 (1, 24, 262208)
+baseline 3 (1, 19, 262208)
+baseline 4 (1, 21, 262208)
+baseline 5 (1, 26, 262208)
+baseline 6 (1, 27, 262208)
+baseline 7 (1, 21, 262208)
+baseline 8 (1, 24, 262208)
+baseline 9 (1, 26, 262208)
+baseline 10 (1, 19, 262208)
+baseline 11 (1, 21, 262208)
+variant_complete structure_only_001 True
+variant_complete random_locations_001 True
+variant_complete weight_informed_001 True
+variant_complete location_shuffled_001 True
+PREFLIGHT_COMPLETE True

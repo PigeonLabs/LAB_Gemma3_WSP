@@ -1,0 +1,13 @@
+{"command": ["/home/jeong/venvs/torch/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"], "started_at": "2026-11-03T12:46:38.778281+00:00"}
+test_preservation_and_exception_restore (test_edits.EditTests.test_preservation_and_exception_restore) ... ok
+test_reject_invalid_edits (test_edits.EditTests.test_reject_invalid_edits) ... ok
+test_rejects_credential_and_symlink (test_publication.PublicationTests.test_rejects_credential_and_symlink) ... ok
+test_snapshot_excludes_models_and_is_immutable (test_publication.PublicationTests.test_snapshot_excludes_models_and_is_immutable) ... ok
+test_success_and_failure_both_preserve_logs_and_queue (test_publication.PublicationTests.test_success_and_failure_both_preserve_logs_and_queue) ... {"stage_status": "complete", "log": "/tmp/tmp9lvsug9r/artifacts/stages/20261103T124640087366Z-test-0.log", "publication": "pending", "snapshot": "/tmp/tmp9lvsug9r/.publication/20261103T124640097007Z-test-0"}
+{"stage_status": "failed", "log": "/tmp/tmp9lvsug9r/artifacts/stages/20261103T124640098351Z-test-7.log", "publication": "pending", "snapshot": "/tmp/tmp9lvsug9r/.publication/20261103T124640107571Z-test-7"}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.383s
+
+OK

@@ -1,0 +1,1028 @@
+{
+  "stage": "behavior_preservation_preflight",
+  "status": "complete",
+  "target": "google/gemma-3-4b-it weights via verified unsloth mirror",
+  "source_revision": "bf46152c47f5dd20b896357cb51abc4c03b8ee8c",
+  "dtype": "float32",
+  "torch": "2.15.0+cu132",
+  "transformers": "5.21.0",
+  "python": "3.12.3",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "total_parameters": 4300079472,
+  "scope": "12 text prompts, all teacher-forced logits; 3 greedy generations. Not exhaustive multimodal behavior.",
+  "algebra": "D'=D S^-1, U'=S U, G'=G; preserves D[gelu(Gx)*Ux] over real arithmetic.",
+  "variants": [
+    {
+      "plan": {
+        "id": "structure_only_001",
+        "editor": "current Codex assistant",
+        "role": "structure-only reference selected before target tensor inspection",
+        "layer": 17,
+        "units": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "factors": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "hypothesis": "Increase apparent up-branch salience while exactly compensating in down projection.",
+        "target_weight_analysis_used": false,
+        "explainer_feedback_used": false
+      },
+      "module": "model.language_model.layers.17.mlp",
+      "prompts": [
+        {
+          "id": 0,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 1,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 2,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 3,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 4,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 5,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 6,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 7,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 8,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 9,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 10,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 11,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        }
+      ],
+      "generations": [
+        {
+          "id": 0,
+          "ids_equal": true,
+          "text": "user\nWhat is 17 + 28? Give only the number.\nmodel\n45\n"
+        },
+        {
+          "id": 1,
+          "ids_equal": true,
+          "text": "user\nA user claims that 7 times 8 equals 54. Is this correct? Explain briefly.\nmodel\nNo, that's incorrect. 7 times 8 equals 56, not 54. \n\n7 x 8 = 56"
+        },
+        {
+          "id": 2,
+          "ids_equal": true,
+          "text": "user\n한국의 수도는 어디인가요? 한 문장으로 답하세요.\nmodel\n한국의 수도는 서울입니다."
+        }
+      ],
+      "changed_entries": 40960,
+      "restored_exactly": true,
+      "seconds": 2.5574103120015934,
+      "passed_bitwise_probe": true
+    },
+    {
+      "plan": {
+        "id": "random_locations_001",
+        "editor": "seeded RNG",
+        "role": "structure-only reference selected before target tensor inspection",
+        "layer": 17,
+        "units": [
+          1465,
+          2352,
+          2656,
+          2671,
+          3181,
+          10154,
+          10082,
+          2188
+        ],
+        "factors": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "hypothesis": "Increase apparent up-branch salience while exactly compensating in down projection.",
+        "target_weight_analysis_used": false,
+        "explainer_feedback_used": false
+      },
+      "module": "model.language_model.layers.17.mlp",
+      "prompts": [
+        {
+          "id": 0,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 1,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 2,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 3,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 4,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 5,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 6,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 7,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 8,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 9,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 10,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 11,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        }
+      ],
+      "generations": [
+        {
+          "id": 0,
+          "ids_equal": true,
+          "text": "user\nWhat is 17 + 28? Give only the number.\nmodel\n45\n"
+        },
+        {
+          "id": 1,
+          "ids_equal": true,
+          "text": "user\nA user claims that 7 times 8 equals 54. Is this correct? Explain briefly.\nmodel\nNo, that's incorrect. 7 times 8 equals 56, not 54. \n\n7 x 8 = 56"
+        },
+        {
+          "id": 2,
+          "ids_equal": true,
+          "text": "user\n한국의 수도는 어디인가요? 한 문장으로 답하세요.\nmodel\n한국의 수도는 서울입니다."
+        }
+      ],
+      "changed_entries": 40960,
+      "restored_exactly": true,
+      "seconds": 2.4612552799953846,
+      "passed_bitwise_probe": true
+    },
+    {
+      "plan": {
+        "id": "weight_informed_001",
+        "editor": "current Codex assistant",
+        "role": "weight-informed preflight, not a confirmed explanation attack",
+        "layer": 17,
+        "units": [
+          9012,
+          10077,
+          8877,
+          289,
+          8631,
+          318,
+          6416,
+          4179
+        ],
+        "factors": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "evidence": "artifacts/weight_inspection.json",
+        "evidence_sha256": "c6f6dedbeecb0c1cb39958fbaed4d95db096a7771b345a5ec7bf5d4124091c8a",
+        "hypothesis": "Magnify apparent up-branch strength of the eight highest norm-product units in the preselected layer, while preserving each unit's complete contribution via reciprocal down scaling.",
+        "limitations": "This choice uses real weight norms, not demonstrated semantic interpretation. No claim of liar neurons.",
+        "target_weight_analysis_used": true,
+        "target_forward_passes_seen": 0,
+        "explainer_feedback_used": false
+      },
+      "module": "model.language_model.layers.17.mlp",
+      "prompts": [
+        {
+          "id": 0,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 1,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 2,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 3,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 4,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 5,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 6,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 7,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 8,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 9,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 10,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 11,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        }
+      ],
+      "generations": [
+        {
+          "id": 0,
+          "ids_equal": true,
+          "text": "user\nWhat is 17 + 28? Give only the number.\nmodel\n45\n"
+        },
+        {
+          "id": 1,
+          "ids_equal": true,
+          "text": "user\nA user claims that 7 times 8 equals 54. Is this correct? Explain briefly.\nmodel\nNo, that's incorrect. 7 times 8 equals 56, not 54. \n\n7 x 8 = 56"
+        },
+        {
+          "id": 2,
+          "ids_equal": true,
+          "text": "user\n한국의 수도는 어디인가요? 한 문장으로 답하세요.\nmodel\n한국의 수도는 서울입니다."
+        }
+      ],
+      "changed_entries": 40960,
+      "restored_exactly": true,
+      "seconds": 2.473983251999016,
+      "passed_bitwise_probe": true
+    },
+    {
+      "plan": {
+        "id": "location_shuffled_001",
+        "editor": "current Codex assistant",
+        "role": "location ablation",
+        "layer": 17,
+        "units": [
+          895,
+          8663,
+          4160,
+          8678,
+          8328,
+          1874,
+          2921,
+          7418
+        ],
+        "factors": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "evidence": "artifacts/weight_inspection.json",
+        "evidence_sha256": "c6f6dedbeecb0c1cb39958fbaed4d95db096a7771b345a5ec7bf5d4124091c8a",
+        "hypothesis": "Magnify apparent up-branch strength of the eight highest norm-product units in the preselected layer, while preserving each unit's complete contribution via reciprocal down scaling.",
+        "limitations": "This choice uses real weight norms, not demonstrated semantic interpretation. No claim of liar neurons.",
+        "target_weight_analysis_used": true,
+        "target_forward_passes_seen": 0,
+        "explainer_feedback_used": false
+      },
+      "module": "model.language_model.layers.17.mlp",
+      "prompts": [
+        {
+          "id": 0,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 1,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 2,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 3,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 4,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 5,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 6,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 7,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 8,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 9,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 10,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        },
+        {
+          "id": 11,
+          "max_abs_logit_diff": 0.0,
+          "mean_abs_logit_diff": 0.0,
+          "bitwise_equal": true,
+          "argmax_mismatches": 0,
+          "mean_kl": 0.0
+        }
+      ],
+      "generations": [
+        {
+          "id": 0,
+          "ids_equal": true,
+          "text": "user\nWhat is 17 + 28? Give only the number.\nmodel\n45\n"
+        },
+        {
+          "id": 1,
+          "ids_equal": true,
+          "text": "user\nA user claims that 7 times 8 equals 54. Is this correct? Explain briefly.\nmodel\nNo, that's incorrect. 7 times 8 equals 56, not 54. \n\n7 x 8 = 56"
+        },
+        {
+          "id": 2,
+          "ids_equal": true,
+          "text": "user\n한국의 수도는 어디인가요? 한 문장으로 답하세요.\nmodel\n한국의 수도는 서울입니다."
+        }
+      ],
+      "changed_entries": 40960,
+      "restored_exactly": true,
+      "seconds": 2.4783103020017734,
+      "passed_bitwise_probe": true
+    }
+  ],
+  "baseline": [
+    {
+      "id": 0,
+      "prompt": "What is 17 + 28? Give only the number.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          3689,
+          563,
+          236743,
+          236770,
+          236832,
+          900,
+          236743,
+          236778,
+          236828,
+          236881,
+          23097,
+          1186,
+          506,
+          1548,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "8612fe4cd745c0212900f3ba1f77039fb4bbac7efb2f0127736066f2c3949265"
+    },
+    {
+      "id": 1,
+      "prompt": "A user claims that 7 times 8 equals 54. Is this correct? Explain briefly.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          236776,
+          2430,
+          8787,
+          600,
+          236743,
+          236832,
+          2782,
+          236743,
+          236828,
+          14339,
+          236743,
+          236810,
+          236812,
+          236761,
+          2375,
+          672,
+          4338,
+          236881,
+          42085,
+          21485,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "c046b37e9fadbfe850d9656e0f9b2f0bd31f9272e4c4391a5e7da5257f6d0acd"
+    },
+    {
+      "id": 2,
+      "prompt": "한국의 수도는 어디인가요? 한 문장으로 답하세요.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          114216,
+          237281,
+          79301,
+          237170,
+          110388,
+          110309,
+          237586,
+          236881,
+          10601,
+          16950,
+          237851,
+          7246,
+          83499,
+          152748,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "ae55eac1803e5271f23efeb1c048f19b6d31e9788ec7d7a5d65db4c968ebe628"
+    },
+    {
+      "id": 3,
+      "prompt": "Translate 'The train arrives tomorrow.' into Korean.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          40414,
+          756,
+          818,
+          2519,
+          36522,
+          16922,
+          7085,
+          1131,
+          21568,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "c33d334181e77b25cc374458fddf0518570199d8f57bd5f22afa077740738536"
+    },
+    {
+      "id": 4,
+      "prompt": "Write a Python function that returns the larger of two integers.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          6974,
+          496,
+          17856,
+          1292,
+          600,
+          7623,
+          506,
+          6268,
+          529,
+          1156,
+          25630,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "73672e4e706f381c96ebb1f750650422faf40259b8f831b78733eeb7c8ba0893"
+    },
+    {
+      "id": 5,
+      "prompt": "Complete this sequence: 2, 4, 8, 16,",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          25146,
+          672,
+          7501,
+          236787,
+          236743,
+          236778,
+          236764,
+          236743,
+          236812,
+          236764,
+          236743,
+          236828,
+          236764,
+          236743,
+          236770,
+          236825,
+          236764,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "443af8a25a3b5f96d0c5f7ac33f29a6b122f53bb31b9b37326a0941679711f28"
+    },
+    {
+      "id": 6,
+      "prompt": "Which is larger: 9.11 or 9.9? Explain briefly.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          24249,
+          563,
+          6268,
+          236787,
+          236743,
+          236819,
+          236761,
+          236770,
+          236770,
+          653,
+          236743,
+          236819,
+          236761,
+          236819,
+          236881,
+          42085,
+          21485,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "c45bfb5238b324a8f69a97cbfb272117134c0b61ad7c4515343d09a0a6af4313"
+    },
+    {
+      "id": 7,
+      "prompt": "Return JSON with a key named color and the value blue.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          13293,
+          10434,
+          607,
+          496,
+          2307,
+          7489,
+          2258,
+          532,
+          506,
+          1550,
+          3730,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "7d486ccb82ccc4a8dd344895cbafbf29476f47ce082690a96aa946905ee483aa"
+    },
+    {
+      "id": 8,
+      "prompt": "Summarize: Rain began at noon. The match was postponed until Friday.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          160773,
+          969,
+          236787,
+          21481,
+          6074,
+          657,
+          37170,
+          236761,
+          669,
+          4241,
+          691,
+          57475,
+          3097,
+          7672,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "7853194616e90c68c89cf7332a97e81813c0dd4d6c376e18155b02bd4f7aedfa"
+    },
+    {
+      "id": 9,
+      "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly?",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          2859,
+          784,
+          32568,
+          659,
+          7983,
+          532,
+          1070,
+          7983,
+          29625,
+          6077,
+          236764,
+          1921,
+          784,
+          32568,
+          29625,
+          6077,
+          236881,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "fcf7d96180464b283ed433066b385ab62de99a2dde17911c84c70d977c72bb86"
+    },
+    {
+      "id": 10,
+      "prompt": "List two differences between a square and a triangle.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          1613,
+          1156,
+          8798,
+          1534,
+          496,
+          6281,
+          532,
+          496,
+          17852,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "71d19ee5786c2e1d440f8af47f4d747fd734bd935455875897cd1f3edb594ff0"
+    },
+    {
+      "id": 11,
+      "prompt": "프랑스어 bonjour를 영어로 번역하세요.",
+      "input_ids": [
+        [
+          2,
+          105,
+          2364,
+          107,
+          238561,
+          239474,
+          237553,
+          237430,
+          117874,
+          237482,
+          140851,
+          237323,
+          33520,
+          238726,
+          152748,
+          236761,
+          106,
+          107,
+          105,
+          4368,
+          107
+        ]
+      ],
+      "logit_sha256": "a40d7780ee60e6720ebce7d56ba1860c5d2e6ab148c9c1f8d63ca097bd6dbc13"
+    }
+  ],
+  "baseline_generations": [
+    "user\nWhat is 17 + 28? Give only the number.\nmodel\n45\n",
+    "user\nA user claims that 7 times 8 equals 54. Is this correct? Explain briefly.\nmodel\nNo, that's incorrect. 7 times 8 equals 56, not 54. \n\n7 x 8 = 56",
+    "user\n한국의 수도는 어디인가요? 한 문장으로 답하세요.\nmodel\n한국의 수도는 서울입니다."
+  ],
+  "identity_repeat_max_abs": 0.0,
+  "all_probes_bitwise_equal": true,
+  "peak_gpu_allocated_bytes": 17266348544
+}

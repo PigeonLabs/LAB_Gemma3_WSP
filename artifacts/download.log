@@ -1,0 +1,16 @@
+{"file": "added_tokens.json", "size": 35, "sha256": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946", "upstream_weight_match": false}
+{"file": "README.md", "size": 25140, "sha256": "fba92bd34f1d8581dc1e683709de21dd3fd9bdfb9a9a8738c15a443700c20824", "upstream_weight_match": false}
+{"file": "chat_template.jinja", "size": 1532, "sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4", "upstream_weight_match": false}
+{"file": "chat_template.json", "size": 1615, "sha256": "fe16baf728db49457cde32802cd7efc0ac8a7a9877dbe22fe3322b2d9dc6ccd9", "upstream_weight_match": false}
+{"file": "config.json", "size": 1659, "sha256": "6bed1ab02267c629a6937cf021c0c7bee97b5e2131d5c262e338aeac794db4df", "upstream_weight_match": false}
+{"file": "generation_config.json", "size": 210, "sha256": "031fdd1faee68cf7e0cafd12203a08f51f86abd82877a401fc8dafad7b2f7b5c", "upstream_weight_match": false}
+{"file": "model-00002-of-00002.safetensors", "size": 3639026128, "sha256": "fdde0e5aa5ced0fa203b3d50f4ab78168b7e3a3e08c6349f5cc9326666e1bb13", "upstream_weight_match": true}
+{"file": "model.safetensors.index.json", "size": 90558, "sha256": "77f4b67de084c31c7bcd373b039908108eee6c6181607e6d53da730e5f0bc659", "upstream_weight_match": false}
+{"file": "preprocessor_config.json", "size": 570, "sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d", "upstream_weight_match": false}
+{"file": "processor_config.json", "size": 70, "sha256": "3ffd5f11778dc73e2b69b3c00535e4121e1badf7018136263cd17b5b34fbaa53", "upstream_weight_match": false}
+{"file": "special_tokens_map.json", "size": 670, "sha256": "45a857d8a2495d0be30a5d2d6de03278195eb028b6e0b8efc248bfa697d65f05", "upstream_weight_match": false}
+{"file": "tokenizer.json", "size": 33384568, "sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795", "upstream_weight_match": true}
+{"file": "tokenizer.model", "size": 4689074, "sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c", "upstream_weight_match": true}
+{"file": "tokenizer_config.json", "size": 1158492, "sha256": "8925eabb556c1897ca1bed405f0612e735a56afcd4d77e76eb90fd771e706f9c", "upstream_weight_match": false}
+{"file": "model-00001-of-00002.safetensors", "size": 4961251752, "sha256": "eb5fd5e97ddd07b56778733e9653c07312529cb00980a318fc3e1c4e3b5a8f1f", "upstream_weight_match": true}
+DOWNLOAD_AND_HASH_VERIFICATION_COMPLETE

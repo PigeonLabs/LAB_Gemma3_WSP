@@ -1,0 +1,16 @@
+{
+  "id": "weight_informed_001",
+  "editor": "current Codex assistant",
+  "role": "weight-informed preflight, not a confirmed explanation attack",
+  "layer": 17,
+  "units": [9012, 10077, 8877, 289, 8631, 318, 6416, 4179],
+  "factors": [8, 8, 8, 8, 8, 8, 8, 8],
+  "evidence": "artifacts/weight_inspection.json",
+  "evidence_sha256": "c6f6dedbeecb0c1cb39958fbaed4d95db096a7771b345a5ec7bf5d4124091c8a",
+  "hypothesis": "Magnify apparent up-branch strength of the eight highest norm-product units in the preselected layer, while preserving each unit's complete contribution via reciprocal down scaling.",
+  "limitations": "This choice uses real weight norms, not demonstrated semantic interpretation. No claim of liar neurons.",
+  "target_weight_analysis_used": true,
+  "target_forward_passes_seen": 0,
+  "explainer_feedback_used": false
+}
+

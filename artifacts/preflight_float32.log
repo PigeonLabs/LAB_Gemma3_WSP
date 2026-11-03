@@ -1,0 +1,48 @@
+loading_model float32
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<11:14,  1.31it/s]Loading weights:   5%|▍         | 42/883 [00:00<00:12, 65.44it/s]Loading weights:   7%|▋         | 66/883 [00:00<00:08, 94.32it/s]Loading weights:  10%|█         | 89/883 [00:01<00:07, 103.33it/s]Loading weights:  12%|█▏        | 108/883 [00:01<00:07, 106.15it/s]Loading weights:  14%|█▍        | 124/883 [00:01<00:06, 113.37it/s]Loading weights:  17%|█▋        | 146/883 [00:01<00:06, 118.88it/s]Loading weights:  18%|█▊        | 161/883 [00:01<00:06, 120.28it/s]Loading weights:  21%|██        | 185/883 [00:01<00:05, 127.10it/s]Loading weights:  23%|██▎       | 199/883 [00:02<00:05, 124.53it/s]Loading weights:  25%|██▌       | 224/883 [00:02<00:04, 133.57it/s]Loading weights:  27%|██▋       | 238/883 [00:02<00:05, 126.07it/s]Loading weights:  29%|██▊       | 252/883 [00:02<00:04, 126.24it/s]Loading weights:  31%|███▏      | 276/883 [00:02<00:04, 133.42it/s]Loading weights:  33%|███▎      | 290/883 [00:02<00:04, 134.38it/s]Loading weights:  34%|███▍      | 304/883 [00:02<00:04, 130.93it/s]Loading weights:  36%|███▋      | 322/883 [00:02<00:03, 143.35it/s]Loading weights:  39%|███▊      | 341/883 [00:03<00:04, 132.05it/s]Loading weights:  40%|████      | 355/883 [00:03<00:03, 133.38it/s]Loading weights:  42%|████▏     | 369/883 [00:03<00:03, 131.01it/s]Loading weights:  45%|████▍     | 393/883 [00:03<00:03, 131.49it/s]Loading weights:  46%|████▌     | 407/883 [00:03<00:03, 131.60it/s]Loading weights:  49%|████▉     | 432/883 [00:03<00:03, 134.50it/s]Loading weights:  64%|██████▍   | 567/883 [00:03<00:00, 410.47it/s]Loading weights:  80%|███████▉  | 705/883 [00:03<00:00, 648.46it/s]Loading weights:  95%|█████████▌| 839/883 [00:04<00:00, 818.02it/s]Loading weights: 100%|██████████| 883/883 [00:04<00:00, 215.03it/s]
+Traceback (most recent call last):
+  File "/media/jeong/ExtHDD/WSP/scripts/run_preflight.py", line 157, in <module>
+    main()
+  File "/media/jeong/ExtHDD/WSP/scripts/run_preflight.py", line 86, in main
+    logits = model(input_ids=ids, use_cache=False).logits.float().cpu()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 997, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 864, in forward
+    inputs_embeds = self.get_input_embeddings()(llm_input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 116, in forward
+    return super().forward(input_ids) * self.embed_scale.to(self.weight.dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 189, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2621, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: embedding(): argument 'indices' (position 2) must be Tensor, not BatchEncoding
