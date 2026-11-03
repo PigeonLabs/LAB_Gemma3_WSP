@@ -54,7 +54,9 @@ def run(stage, command, root=ROOT, transport='connector'):
                           signals=interrupted)
             (out/(ident+'.json')).write_text(json.dumps(record, indent=2)+'\n')
         errors = []
-        for name in ['summarize.py', 'build_readme.py']:
+        # Version 2 must never regenerate the frozen version-1 evidence.
+        reports = ['report_v2.py'] if stage.startswith('v2-') else ['summarize.py', 'build_readme.py']
+        for name in reports:
             script = root/'scripts'/name
             if script.exists():
                 try:

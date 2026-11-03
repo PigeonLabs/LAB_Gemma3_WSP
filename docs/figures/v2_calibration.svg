@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="360" viewBox="0 0 880 360">
+<rect width="880" height="360" rx="16" fill="#101b2d"/>
+<g font-family="sans-serif" fill="#e5edf6"><text x="28" y="38" font-size="23">V2 calibration — observed results only</text>
+<text x="28" y="65" font-size="14">Cyan: answer accuracy · Gold: answer + numeric premises · Dashed: 80%</text>
+<text x="28" y="170" font-size="20">NOT RUN / no completed calibration summary</text>
+</g></svg>
