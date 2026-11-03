@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = 'PigeonLabs/LAB_Gemma3_WSP'
 TOP_FILES = {'.gitignore', 'AGENTS.md', 'README.md', 'RESULTS.md'}
 FOLDERS = {'scripts', 'wsp', 'tests', 'plans', 'docs', 'artifacts'}
-EXTENSIONS = {'.py', '.md', '.json', '.log', '.svg', '.safetensors'}
+EXTENSIONS = {'.py', '.md', '.json', '.jsonl', '.log', '.svg', '.safetensors'}
 SECRET = re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|hf_[A-Za-z0-9]{30,}|sk-proj-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)')
 
 

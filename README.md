@@ -2,6 +2,8 @@
 
 **행동을 보존하는 가중치 편집으로 외부 설명자의 판단을 바꿀 수 있는가?**
 
+
+
 [상세 결과](RESULTS.md) · [실험 프로토콜](docs/EXPERIMENT_PROTOCOL.md) · [원본 로그·결과](artifacts/) · [자동 기록·업로드](docs/PUBLICATION.md)
 
 > **현재 결론 — 예비실험.** FP32/BF16에서 검사한 출력은 편집 전후 동일했다.
@@ -95,6 +97,7 @@ greedy 생성**을 비교했다. 표의 분모는 각 검사에 사용한 입력
 | 단계 | 실행 상태 | 종료 시각 UTC | 기록 |
 |---|---|---|---|
 | publication-validation | complete | 2026-11-03T12:46:40.434172+00:00 | [log](artifacts/stages/20261103T124638778262Z-publication-validation.log) · [record](artifacts/stages/20261103T124638778262Z-publication-validation.json) |
+| v1-implementation-tests | complete | 2026-11-03T13:22:11.050417+00:00 | [log](artifacts/stages/20261103T132206703466Z-v1-implementation-tests.log) · [record](artifacts/stages/20261103T132206703466Z-v1-implementation-tests.json) |
 
 실행 상태와 업로드 상태는 구분한다. GitHub의 파일과 커밋이 공개된 증거이며,
 로컬 전송 대기·확인 영수증은 `.publication/`에 보관한다.

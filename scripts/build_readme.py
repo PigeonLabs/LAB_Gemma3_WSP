@@ -7,6 +7,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def build(root=ROOT):
+    study_summary = ''
+    if root == ROOT and (root/'artifacts/study_v1/preregistration.json').exists():
+        import sys
+        sys.path.insert(0, str(root))
+        from wsp.reporting import build as build_study
+        result = build_study()
+        study_summary = ('**본실험 v1:** 사전등록 완료. [프로토콜](docs/STUDY_V1.md) · '
+                         '[실행 보고서](artifacts/study_v1/REPORT.md).')
+        if result:
+            study_summary += (f" 교정 정확도 **{result['correct']}/{result['denominator']} "
+                              f"({result['calibration_accuracy']:.1%})**, 상태 `{result['status']}`.")
+            if result['status'] != 'passed':
+                study_summary += ' 사전등록한 80% 기준에 미달하여 본 공격 실험은 중단했습니다.'
     conditions = ['original', 'structure_only', 'random_locations',
                   'weight_informed', 'location_shuffled']
     pilot_path = root / 'artifacts/circuit_forced_choice.json'
@@ -50,7 +63,7 @@ def build(root=ROOT):
             r = json.loads(p.read_text())
             stages.append(f"| {r['stage']} | {r['status']} | {r['ended_at']} | [log]({r['log']}) · [record]({p.relative_to(root)}) |")
     template = (root / 'docs/README.template.md').read_text()
-    for key, value in {'BEHAVIOR': '\n'.join(behavior) or '| No completed runs | | | | |',
+    for key, value in {'STUDY': study_summary, 'BEHAVIOR': '\n'.join(behavior) or '| No completed runs | | | | |',
                        'ANSWERS': '\n'.join(rows),
                        'STAGES': '\n'.join(stages) or '| 초기 실행 | 아래 원본 로그 참조 | — | — |'}.items():
         template = template.replace('{{'+key+'}}', value)

@@ -2,6 +2,8 @@
 
 **행동을 보존하는 가중치 편집으로 외부 설명자의 판단을 바꿀 수 있는가?**
 
+{{STUDY}}
+
 [상세 결과](RESULTS.md) · [실험 프로토콜](docs/EXPERIMENT_PROTOCOL.md) · [원본 로그·결과](artifacts/) · [자동 기록·업로드](docs/PUBLICATION.md)
 
 > **현재 결론 — 예비실험.** FP32/BF16에서 검사한 출력은 편집 전후 동일했다.
