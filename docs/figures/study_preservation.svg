@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="180" viewBox="0 0 920 180" role="img">
+<title>Behavior preservation</title>
+<rect width="920" height="180" fill="#111827" rx="12"/>
+<g font-family="sans-serif" fill="#e5e7eb">
+<text x="24" y="35" font-size="21">Behavior preservation</text>
+<text x="24" y="85" font-size="17">NOT RUN / no result available</text>
+<text x="24" y="160" font-size="12">Bitwise logits + exact greedy tokens on a finite text suite; not an all-input proof.</text>
+</g></svg>

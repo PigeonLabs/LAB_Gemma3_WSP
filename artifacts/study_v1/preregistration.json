@@ -1,0 +1,126 @@
+{
+  "study_id": "gemma3_wsp_v1",
+  "registered_at": "2026-11-03T13:24:03.991032+00:00",
+  "config": {
+    "schema_version": 1,
+    "study_id": "gemma3_wsp_v1",
+    "target": "models/gemma-3-4b-it",
+    "source_revision": "bf46152c47f5dd20b896357cb51abc4c03b8ee8c",
+    "upstream_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "observer_revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+    "calibration_layers": [
+      0,
+      11,
+      17,
+      33
+    ],
+    "development_layers": [
+      3,
+      8,
+      13,
+      18,
+      23,
+      28
+    ],
+    "layer_count": 34,
+    "circuits_per_layer": 8,
+    "units_per_circuit": 16,
+    "edited_units": 4,
+    "candidate_groups_per_layer": 640,
+    "seed": 2026110301,
+    "selection_seeds": [
+      4101,
+      4102,
+      4103
+    ],
+    "scale": 8.0,
+    "input_scale": 16.0,
+    "minimum_relative_margin": 0.2,
+    "minimum_total_influence": 1e-08,
+    "edit_norm_tolerance": 0.05,
+    "top_combinations": 8,
+    "arms": [
+      "W",
+      "S",
+      "M",
+      "R"
+    ],
+    "calibration_formats": [
+      "table",
+      "equations",
+      "grouped"
+    ],
+    "calibration_minimum_accuracy": 0.8,
+    "uncertain_logprob_gap": 0.05,
+    "main_wordings": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "replication_wordings": [
+      4,
+      5
+    ],
+    "prose_wordings": [
+      0,
+      1
+    ],
+    "prose_max_new_tokens": 192,
+    "generation_max_new_tokens": 64,
+    "bf16_prompt_count": 32,
+    "generation_prompt_count": 8,
+    "fp32_variant_count": 96,
+    "prose_circuit_count": 96,
+    "primary_minimum_advantage": 0.15,
+    "familywise_alpha": 0.05,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 2026110302,
+    "journal_chunk_size": 32,
+    "semantic_development_count": 32,
+    "semantic_test_count": 64,
+    "editor_mode": "assistant-authored frozen policy, not independent LLM calls",
+    "calibration_selection": "All three formats are predeclared. Select highest development accuracy (tie: declared order); only that format is assessed once on calibration. Gate requires >=0.8 on both development and calibration, abstentions count incorrect.",
+    "multiple_testing": "Layer-cluster bootstrap; two primary comparisons use Bonferroni simultaneous 95% intervals (97.5% marginal intervals). No selection or retuning on final test.",
+    "semantic_scope": "Exploratory prediction of actual target A/B likelihood from partial static weight evidence, not full-checkpoint understanding."
+  },
+  "config_sha256": "accc107d03ce3c69163828710896a5ab217aa6a604e54e7d263e6af2f862628f",
+  "model_manifest_sha256": "0fbe263a87a53889de025dc00b3d1a2d5c51ecd67f362c259f45721f26280f48",
+  "frozen_sources": {
+    "wsp/__init__.py": "e52a2f22f987b106f983751beac5658f5ddcd5e3b32294ad351a10ac47767f35",
+    "wsp/calibration.py": "fdd9ea30552727048db306bea8d79de0567e2e548dd87b72de5425e7b641daeb",
+    "wsp/circuits.py": "c9d81e71cdbeeff8e2e0f6c230b13b9e9c8a95be7ba4b7c272e52395cf898ec1",
+    "wsp/edits.py": "53cfe00d2dd19acb3abac5ec072628826b0308518f9986059294c0f3dc2ae0bc",
+    "wsp/evaluation.py": "44434a760a371eb5a0cc6ab64304d7c3a75c55a4ec29cf1b6d183d00ab1c95be",
+    "wsp/extra_checks.py": "7750b2a9cdc12efcb13a2e83fb383f8b2837f46429d026c3ed4040a0f7ef24a0",
+    "wsp/interventions.py": "d4c16b895a3bc9209b2bc3163d8fef854392a9d7dcf41b10340c4e6b335424a8",
+    "wsp/observer.py": "2b66be6ae56eec79b59975f11c8109adcd4afd0a9102391f9dfee8cf7130c239",
+    "wsp/policies.py": "490600cef2977a35ceb7104e66989d0ede11da02aafa096dffd38eaa55febf4d",
+    "wsp/preservation.py": "bcf95ce95477383ad6ff34c0a3e9944de24b09ce607e336db07279393ecaddf1",
+    "wsp/prompts.py": "831c46820d03ca30a44ebd720702308515692f655826c1068954dd6caaccfbc1",
+    "wsp/reporting.py": "38eb3c78df92817396955546496fa8ec4968a41211758d30ec50f33668f8d197",
+    "wsp/semantics.py": "adc266c5156779d15fcc87ba3b9c929a6b184e265c5dfb3d55fe6c9679879dc6",
+    "wsp/statistics.py": "f3900fdd661e8f26133f94d91c57b6666c226bafc5a75f96c4c2d73765261607",
+    "wsp/study.py": "821016a601a6d73966e2e77d8578ef963d8f3617c4ff182d91deb60d4c775ed1",
+    "plans/structure_only.json": "33f6da4bb71a25dd45302a2e95dce0fd3b6d32070645582d7869a0d7c1c0049d",
+    "plans/study_v1.json": "77dd8ca49021552bc66d92cc5fc23f876d2f7672cd154e4467c161980359e645",
+    "plans/weight_informed.json": "29dd6eaa563b8d430a36f42f0445ca8bf13b8a14aadf765b31052ca4a7b216d9"
+  },
+  "scope": "one target checkpoint; assistant-authored static policies",
+  "timing_estimate_hours": [
+    38,
+    69
+  ],
+  "timing_with_contingency_hours": [
+    50,
+    90
+  ],
+  "clarifications": [
+    "Development selects one of three formats; separate calibration is assessed once.",
+    "Common perturbation norm reference is the median over all 1820 four-neuron subsets.",
+    "Bonferroni simultaneous bootstrap intervals for the two primary comparisons.",
+    "Projected coefficient wire format uses 12 significant digits; truth rechecked.",
+    "Scientific modules and config are frozen before dataset extraction. Test contents are not shown to the editor.",
+    "Prior download verified full shard SHA256. This stage rechecks sizes and small runtime-file hashes."
+  ]
+}

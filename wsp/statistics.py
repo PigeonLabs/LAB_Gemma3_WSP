@@ -43,9 +43,25 @@ def analyze():
                                'passes':bool(means[0]-means[j]>=.15 and interval[0]>0 and prose_diff>0)}
     success=all(comparisons['W-'+arm]['passes'] for arm in ['S','M'])
     original=[r for r in rows if r['arm']=='O']
+    original_lookup={(r['circuit_id'],r['wording']):r for r in original}
+    conditional={}; shifts={}
+    for arm in cfg['arms']:
+        eligible=[r for r in rows if r['arm']==arm and original_lookup[(r['circuit_id'],r['wording'])]['answer']==r['truth']]
+        conditional[arm]={'denominator':len(eligible),
+            'rate':sum(r['preserved'] and r['answer']==r['target'] for r in eligible)/len(eligible) if eligible else None}
+        differences=[]
+        for r in rows:
+            if r['arm']!=arm or 'completion_logprob' not in r: continue
+            base=original_lookup[(r['circuit_id'],r['wording'])]
+            target=r['target']; other=r['truth']
+            differences.append((r['completion_logprob'][target]-r['completion_logprob'][other])-
+                               (base['completion_logprob'][target]-base['completion_logprob'][other]))
+        shifts[arm]=float(np.mean(differences)) if differences else None
     result={'status':'complete','claim':'weight_information_advantage_supported' if success else 'not_established',
             'semantic_gate_passed':success,'unit_of_inference':'24 layers of ONE fixed Gemma checkpoint',
             'arm_success_rate':dict(zip(cfg['arms'],means.tolist())),
+            'arm_cluster_95_intervals':{a:np.quantile(samples[:,i],[.025,.975]).tolist() for i,a in enumerate(cfg['arms'])},
+            'conditional_success':conditional,'mean_target_logodds_shift':shifts,
             'comparisons':comparisons,'baseline_accuracy':sum(r['answer']==r['truth'] for r in original)/len(original),
             'outcome_counts':{a:{v:sum(r['arm']==a and r['answer']==v for r in rows) for v in ['A','B','UNKNOWN','INVALID','PRESERVATION_FAILED']} for a in ['O']+cfg['arms']},
             'layer_rates':{str(l):dict(zip(cfg['arms'],matrix[i].tolist())) for i,l in enumerate(layers)},

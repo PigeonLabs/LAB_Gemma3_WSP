@@ -52,6 +52,7 @@ def run(path=None):
             'calibration_accuracy':accuracy,'correct':sum(r['answer']==r['truth'] for r in rows),
             'denominator':len(rows),'uncertain':sum(r['answer']=='UNKNOWN' for r in rows),
             'minimum_accuracy':.8,'main_experiment_authorized_by_gate':passed,
+            'calibration_truth_counts':{a:sum(r['truth']==a for r in rows) for a in ['A','B']},
             'load_seconds':observer.load_seconds if observer else None,
             'score_calls':len(journal.rows),'median_score_seconds':statistics.median(times),
             'p90_score_seconds':sorted(times)[min(len(times)-1,int(.9*len(times)))],

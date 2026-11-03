@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="180" viewBox="0 0 920 180" role="img">
+<title>Targeted wrong explanation / all cases</title>
+<rect width="920" height="180" fill="#111827" rx="12"/>
+<g font-family="sans-serif" fill="#e5e7eb">
+<text x="24" y="35" font-size="21">Targeted wrong explanation / all cases</text>
+<text x="24" y="85" font-size="17">NOT RUN / no result available</text>
+<text x="24" y="160" font-size="12">Yellow: marginal 95% layer-cluster intervals. Paired simultaneous comparisons are in JSON.</text>
+</g></svg>

@@ -9,7 +9,7 @@ def read(name):
     return json.loads(path.read_text()) if path.exists() else None
 
 
-def panel(name,title,items,note):
+def panel(name,title,items,note,intervals=None):
     height=max(180,100+len(items)*28)
     values=['<svg xmlns="http://www.w3.org/2000/svg" width="920" height="'+str(height)+'" viewBox="0 0 920 '+str(height)+'" role="img">',
             '<title>'+html.escape(title)+'</title>',
@@ -21,6 +21,9 @@ def panel(name,title,items,note):
         values += [f'<text x="24" y="{y+14}" font-size="13">{html.escape(label)}</text>',
                    f'<rect x="320" y="{y}" width="{max(0,min(1,value))*360:.1f}" height="18" fill="#38bdf8"/>',
                    f'<text x="700" y="{y+14}" font-size="12">{html.escape(extra)}</text>']
+        if intervals and label in intervals:
+            lo,hi=intervals[label]
+            values.append(f'<line x1="{320+360*lo:.1f}" x2="{320+360*hi:.1f}" y1="{y+9}" y2="{y+9}" stroke="#fbbf24" stroke-width="3"/>')
     if not items: values.append('<text x="24" y="85" font-size="17">NOT RUN / no result available</text>')
     values += [f'<text x="24" y="{height-20}" font-size="12">{html.escape(note)}</text>','</g></svg>']
     dest=ROOT/'docs/figures'/name; dest.parent.mkdir(parents=True,exist_ok=True)
@@ -34,7 +37,8 @@ def build():
     if analysis:
         curves=[(a,r,f'{r:.1%}') for a,r in analysis['arm_success_rate'].items()]
     panel('study_attack.svg','Targeted wrong explanation / all cases',curves,
-          'Single checkpoint. See JSON for paired, layer-cluster simultaneous confidence intervals.')
+          'Yellow: marginal 95% layer-cluster intervals. Paired simultaneous comparisons are in JSON.',
+          analysis.get('arm_cluster_95_intervals') if analysis else None)
     checks=load_rows(PUBLIC/'preservation_bfloat16')
     passed=sum(r['passed'] for r in checks)
     panel('study_preservation.svg','Behavior preservation',
