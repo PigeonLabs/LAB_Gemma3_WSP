@@ -1,0 +1,11 @@
+models/
+__pycache__/
+*.pyc
+.pytest_cache/
+artifacts/*.pt
+.publication/
+.env
+.env.*
+.venv/
+*.pem
+*.key
