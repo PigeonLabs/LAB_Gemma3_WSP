@@ -29,8 +29,12 @@ def build():
         status=('완료 (세부 수치는 원본 JSON)' if name=='diagnostic' else r.get('status','완료')) if r else '미완료'
         lines.append(f'| {name} | '+(f'[{status}](artifacts/study_v2/{name}_summary.json)' if r else status)+' |')
     if 'diagnostic' in summaries:
+        plot='v2_diagnostics_measured.svg' if (root_plot:=ROOT/'docs/figures/v2_diagnostics_measured.svg').exists() else 'v2_diagnostics.svg'
         lines+=['','[진단 상세 보고서](artifacts/study_v2/DIAGNOSTIC_REPORT.md)',
-                '', '![진단 결과](docs/figures/v2_diagnostics.svg)']
+                '', f'![진단 결과](docs/figures/{plot})']
+        if (PUBLIC/'DIAGNOSTIC_AUDIT.md').exists():
+            lines+=['','**진단 원인 분석:** [응답 편향·수치 오류·도구 인터페이스 감사](artifacts/study_v2/DIAGNOSTIC_AUDIT.md). '
+                '독립 교정과 본 공격 평가는 미실행이며 80% 기준은 유지합니다. 사용자 선택에 따라 후속 실험을 자동 시작하지 않습니다.']
     lines+=['','![교정 결과; 완료된 구성만 표시](docs/figures/v2_calibration.svg)','',
         '원자료: [v2 폴더](artifacts/study_v2). 즉시 선택·도구 계산·정확값 제공을 구분하며, 형식 실패는 정답으로 세지 않습니다.',
         '', '참고: [Neural Networks Are Already Clean](https://already-clean.goodfire.com/) · '

@@ -28,7 +28,9 @@ flowchart LR
 
 [진단 상세 보고서](artifacts/study_v2/DIAGNOSTIC_REPORT.md)
 
-![진단 결과](docs/figures/v2_diagnostics.svg)
+![진단 결과](docs/figures/v2_diagnostics_measured.svg)
+
+**진단 원인 분석:** [응답 편향·수치 오류·도구 인터페이스 감사](artifacts/study_v2/DIAGNOSTIC_AUDIT.md). 독립 교정과 본 공격 평가는 미실행이며 80% 기준은 유지합니다. 사용자 선택에 따라 후속 실험을 자동 시작하지 않습니다.
 
 ![교정 결과; 완료된 구성만 표시](docs/figures/v2_calibration.svg)
 
@@ -42,3 +44,4 @@ flowchart LR
 | v2-preregister | complete | [원본](artifacts/stages/20261103T141509447572Z-v2-preregister.log) |
 | v2-extract | complete | [원본](artifacts/stages/20261103T141541647895Z-v2-extract.log) |
 | v2-diagnose | complete | [원본](artifacts/stages/20261103T141642125117Z-v2-diagnose.log) |
+| v2-diagnostic-audit | complete | [원본](artifacts/stages/20261103T175219278795Z-v2-diagnostic-audit.log) |

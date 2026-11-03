@@ -1,5 +1,15 @@
 # Stage publication
 
+## Version 2 exception
+
+For `v2-*` stages, `run_stage.py` invokes `report_v2.py` only. It never
+regenerates v1 reports or `artifacts/source_manifest.json`, which remains frozen
+v1 evidence. V2 scientific provenance is in its preregistration and per-stage
+source hashes. V2 diagnosis is followed only by its CPU audit/report, not by
+automatic development or calibration: the user declined recurring automation.
+No heartbeat was created. The current stage's publication is handled in this
+active conversation, not by a scheduled background job.
+
 ## During this Codex experiment
 
 1. Run `python3 scripts/run_stage.py STAGE -- COMMAND ...`. The runner waits for

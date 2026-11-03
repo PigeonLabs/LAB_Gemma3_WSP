@@ -1,0 +1,423 @@
+{
+  "status": "verified",
+  "scope": "post-hoc descriptive diagnosis; original scores, gates, and raw data unchanged",
+  "episodes": 640,
+  "raw_sha256": {
+    "artifacts/study_v2/diagnostics/chunk-000000.jsonl": "07c3f9fee24bb1f3753afd008ee1b5c1d08c69ce301bf2c41644beea21008b5f",
+    "artifacts/study_v2/diagnostics/chunk-000001.jsonl": "37f6e8d411d28483b018c66c26ec7e02029320f05c28cf7867c54641a2b2d244",
+    "artifacts/study_v2/diagnostics/chunk-000002.jsonl": "230532cc1d292ec1377226cee1819b4c447c40dea1f301d576cf84305b3c0e32",
+    "artifacts/study_v2/diagnostics/chunk-000003.jsonl": "1527ef321624f24ae45aa52ceff3f7c86fc5aa116be444d6d306a87680b1488f",
+    "artifacts/study_v2/diagnostics/chunk-000004.jsonl": "75f9ed395550fa37985397a0516de7ee81038515e142ce00e4d185bd20b3cb48",
+    "artifacts/study_v2/diagnostics/chunk-000005.jsonl": "cc819a22ef055acf510c8aaaaa393b23d665addd12d66c5789321884dff52799",
+    "artifacts/study_v2/diagnostics/chunk-000006.jsonl": "c73fe4429defa6a2bc56c942799907079cb38edead3f639d9c8a96e9bd606754",
+    "artifacts/study_v2/diagnostics/chunk-000007.jsonl": "4173539807f9dba896927fe1059f1df7a0e5cc08e6abf760715cf0677a19b3d8",
+    "artifacts/study_v2/diagnostics/chunk-000008.jsonl": "3c1d170f10f8cc177ed29da6cc50469e8901c85b814390583adda83b84e4dba7",
+    "artifacts/study_v2/diagnostics/chunk-000009.jsonl": "4e5f20be0de1a97e1cc147faceb14dbfd535cfac7ae22be81c80c5c2df556152",
+    "artifacts/study_v2/diagnostics/chunk-000010.jsonl": "56ba438183c92d81a48d82eaba51f2b2245577de232975ec7ac5488fe23ca5ab",
+    "artifacts/study_v2/diagnostics/chunk-000011.jsonl": "4c94c93b898548e21adcb522e715f06789ba2f8b542cc545c6182fe5a72f7208",
+    "artifacts/study_v2/diagnostics/chunk-000012.jsonl": "8ecd3c55b5c128a7c52a92ae7f4b002583bce4ae99dad914682fe09c6eacb977",
+    "artifacts/study_v2/diagnostics/chunk-000013.jsonl": "5f39fc3ec6b9738313d37a8cab5ad6082eaa8ca08ce6916c9b680a7ec6a83e6f",
+    "artifacts/study_v2/diagnostics/chunk-000014.jsonl": "16176fb9083617b186d2ed6ee5c227a83e81005cc7c6ce0aa9cdf71d17af3bcd",
+    "artifacts/study_v2/diagnostics/chunk-000015.jsonl": "a4340faa74c005b48188e6e124df60126524381b12bcf67132ef0b0896f1e11f",
+    "artifacts/study_v2/diagnostics/chunk-000016.jsonl": "b98e109225b082c1df42c2ba5cfe32be1e972f5d10ffff5abc501dab280acdce",
+    "artifacts/study_v2/diagnostics/chunk-000017.jsonl": "70c591f45962010a6d6e6dc39f4e796cabd944c75287b6e0349c5531f316a7e2",
+    "artifacts/study_v2/diagnostics/chunk-000018.jsonl": "9ddc84f862559a9438861fbf89729354ca54ff12c5c9f7cdafcaa766cb1ce679",
+    "artifacts/study_v2/diagnostics/chunk-000019.jsonl": "ee80504429399b9c271f5fa78d2ab7740db47013d3a6e2d5b1521872f4694a3c",
+    "artifacts/study_v2/diagnostics/chunk-000020.jsonl": "2e233b3c15149728c66866cb84906b4f4ca68da8e6dbc7411c4116e0f338871b",
+    "artifacts/study_v2/diagnostics/chunk-000021.jsonl": "a4db11a09c75634adb954be745fc7685b18500276ee64565a564b316bf465531",
+    "artifacts/study_v2/diagnostics/chunk-000022.jsonl": "a9c45f809c668a1341d8f5943b87841ff2d8d1547cc20eb3a47197fc60b1f173",
+    "artifacts/study_v2/diagnostics/chunk-000023.jsonl": "6f35c04636edf702bf7b12233d8a2bd620c47ef5bdd75a7a9f53b9da182d63a1",
+    "artifacts/study_v2/diagnostics/chunk-000024.jsonl": "e787050fa248d3e1f0f9039e332caa000c92ad651a8da1354139b7b0a6539632",
+    "artifacts/study_v2/diagnostics/chunk-000025.jsonl": "5ece71e544c7a37ae4ecb7495459921909a3e6023d7f4dd2af5b7f13d0d82a5c",
+    "artifacts/study_v2/diagnostics/chunk-000026.jsonl": "bd0f7be7e77e41824444d94165f5a48205fb3534b0d4bbc8bf610337c9265fb4",
+    "artifacts/study_v2/diagnostics/chunk-000027.jsonl": "ea2714352f28c010cab101185a1b9a671bf6ed69fa35c0d22df817ca4a2c5676",
+    "artifacts/study_v2/diagnostics/chunk-000028.jsonl": "33d0006b1a6a12b4a0ba7dc93bb38e26252e14d552cbdeb20efe6c56d7870738",
+    "artifacts/study_v2/diagnostics/chunk-000029.jsonl": "74c0097c7e134cc6ae95c60ba946ea87bc590efb67110f8e411211d4196115df",
+    "artifacts/study_v2/diagnostics/chunk-000030.jsonl": "0e3f76884eb8519793c2887e9cfd39d4661bd609265ef85b42bd63be7b77b411",
+    "artifacts/study_v2/diagnostics/chunk-000031.jsonl": "725f6a62cd53bc97383e44345d18a9d997caca25f1eefdad5bdade0e5f055577",
+    "artifacts/study_v2/diagnostics/chunk-000032.jsonl": "2fdc80334bd58e37a689b8fbb6de71d74fce06b9131eb8e4a45382eacf527c73",
+    "artifacts/study_v2/diagnostics/chunk-000033.jsonl": "25b57c53ea7b555c1961a322db626a8047703cecbfa82ad2c42d694abc599640",
+    "artifacts/study_v2/diagnostics/chunk-000034.jsonl": "881be729b5a0f25502fa08a7f0ea055c77884baf8f7c3ca2e6efafbece7f16ff",
+    "artifacts/study_v2/diagnostics/chunk-000035.jsonl": "4151754842d07b39719ce31ad0e25d4612e06884f469fb51e9cb7f266eda1c46",
+    "artifacts/study_v2/diagnostics/chunk-000036.jsonl": "fea07681e63a8d2a28c3c5f54a79aec8119c55ed41f18bba264fe314f8ec5558",
+    "artifacts/study_v2/diagnostics/chunk-000037.jsonl": "7b50bd93a8d6e5f22b3e3eb40546df33dbdd95866d073723b18461c0988b1659",
+    "artifacts/study_v2/diagnostics/chunk-000038.jsonl": "b5df544cc14ac18e71b64116349309c6c6a1b45ae283d0cc953fe640742e36a6",
+    "artifacts/study_v2/diagnostics/chunk-000039.jsonl": "c5fcaee3e3a1795b575ffca3f6ce1b673fb8ddd2aa2dbb0bc231bf406b7a8e73",
+    "artifacts/study_v2/diagnostics/chunk-000040.jsonl": "cf194b69b1f3a2714552f4271b2564ac4b0a2391f2534ad0586a7546fa7b2627",
+    "artifacts/study_v2/diagnostics/chunk-000041.jsonl": "96923f0a13f01ad4115bba7c17948f21ca7354f18fa30b00d8f5415b67367c65",
+    "artifacts/study_v2/diagnostics/chunk-000042.jsonl": "98e0168b76a0642916ef20214c6207b8c610061432f95a1d22d4505e890fdae6",
+    "artifacts/study_v2/diagnostics/chunk-000043.jsonl": "f38053d8db1b06edb56272eb6768622b0f0fbe056be7fd526eb61e0a985db019",
+    "artifacts/study_v2/diagnostics/chunk-000044.jsonl": "e5556b4c121eb4d3dd043ba11735ee43620682275cda30cbf5924b20d48f3cf9",
+    "artifacts/study_v2/diagnostics/chunk-000045.jsonl": "926b05dc99f83f896c8f253b9a192f9fb103b5fde026980bf79664d10d46b15b",
+    "artifacts/study_v2/diagnostics/chunk-000046.jsonl": "4b326fc14aecd84b55c9b7fae72e9a17149d59f7bbd0e84534041394f9be580c",
+    "artifacts/study_v2/diagnostics/chunk-000047.jsonl": "c67aa886f0514d1142ea2029ff82d729fc614b938e4471207bf63d15612fa6ba",
+    "artifacts/study_v2/diagnostics/chunk-000048.jsonl": "e05d918e378a618de6123bfa42b216c8af2bfdcd10d7a48d842e722825f0679d",
+    "artifacts/study_v2/diagnostics/chunk-000049.jsonl": "8d566656a0b0c69f5add091ed3fcf3ff191cf5c191d3527ff07c6b7b76a26c54",
+    "artifacts/study_v2/diagnostics/chunk-000050.jsonl": "f104baa1e27b55ca4a7902a6b948a472ae2bc127a5e7f288562d71f3d34af04e",
+    "artifacts/study_v2/diagnostics/chunk-000051.jsonl": "dd401ff241cf60ba7b21f275e3aa58e9fd10bb70e90469cda1691943381db163",
+    "artifacts/study_v2/diagnostics/chunk-000052.jsonl": "630f9538b46eca5e4a5081816ae6a7506e2180202102498ad1ef6f0cf29a4557",
+    "artifacts/study_v2/diagnostics/chunk-000053.jsonl": "9deda75ee8cc01c2d439971df84702976bd72e0e7587bb266fb2ed24a0531257",
+    "artifacts/study_v2/diagnostics/chunk-000054.jsonl": "7943f18bba8e7582302638a223e0bdbbcb358a8da0e4a3bffec897b1c890c2d4",
+    "artifacts/study_v2/diagnostics/chunk-000055.jsonl": "8b0083902614ea6cc9f9c10daee922f9299c3edd54bd7e3a4b24474be3aaa3a0",
+    "artifacts/study_v2/diagnostics/chunk-000056.jsonl": "c4018b615051e1d2637dc610bb4ab896331fc3331927137dee678c6d800d7dff",
+    "artifacts/study_v2/diagnostics/chunk-000057.jsonl": "d367e1c79b9b314d357f8921e5dbd1f2c19b228cce84fc72dc7f178f838659f6",
+    "artifacts/study_v2/diagnostics/chunk-000058.jsonl": "c5238df9b1054715837cb459d2f1492b2f03c39528422efe57b0adede2297279",
+    "artifacts/study_v2/diagnostics/chunk-000059.jsonl": "0273bdfa122d1f312fdadb0897d6af2dc1cc0f97ad3e6b186ac996b52a1a5a73",
+    "artifacts/study_v2/diagnostics/chunk-000060.jsonl": "e913c0f7798f1e0f20d3ad0d499457cb5fb939fa027cd4f6c09f5d8a4549e193",
+    "artifacts/study_v2/diagnostics/chunk-000061.jsonl": "aceb50dd15378bf51a424d10135d587a0cd300a63ecd75714d67c7b77438d99a",
+    "artifacts/study_v2/diagnostics/chunk-000062.jsonl": "53baf4148df91b6b30dcda744b8ede827dd81286e7b6f85373ce1de80dc96059",
+    "artifacts/study_v2/diagnostics/chunk-000063.jsonl": "eadf6c6abc2387bb5769f249464ae58434e76bb65a0a5614d54cdcc9d4eb5bf7",
+    "artifacts/study_v2/diagnostics/chunk-000064.jsonl": "244a44401dea41d319f3d05199f2a1e6667917240bfdf41c8fcfb28a544b3a80",
+    "artifacts/study_v2/diagnostics/chunk-000065.jsonl": "70bf9a8527e3b3435ea707d105e46734fcfd6b36c11af0e0faadab30ed165653",
+    "artifacts/study_v2/diagnostics/chunk-000066.jsonl": "7d796ea8e662e5b4421e5dcd6ccfaa2d5ccedbda5c3af7465d48431394f84a1d",
+    "artifacts/study_v2/diagnostics/chunk-000067.jsonl": "3e9f47523a3b87f5b0088a7801fea5a24143d4b47ba2e8077774c04f6bd37998",
+    "artifacts/study_v2/diagnostics/chunk-000068.jsonl": "4a2ca7af41e4227910a25d28e09da4653ced6bf419b56e02d0e035ed105882af",
+    "artifacts/study_v2/diagnostics/chunk-000069.jsonl": "571baf4e3bade02c83444ae99224d79282df9b3dbc940029d631a62ab88e9aea",
+    "artifacts/study_v2/diagnostics/chunk-000070.jsonl": "fdb5e076ddd5db309eb14485bc2e37a97c930801513ca6d9b183af65ed029e39",
+    "artifacts/study_v2/diagnostics/chunk-000071.jsonl": "be3472dfe5dc22f99cf0a0086344c69bb472c943ad27f905d8fe7499c6c2439d",
+    "artifacts/study_v2/diagnostics/chunk-000072.jsonl": "4da744a188f44537f9f2b9dda7e14de57934a27ffc1453b94a0bde8d32668b10",
+    "artifacts/study_v2/diagnostics/chunk-000073.jsonl": "18b6f7ebb3a33467842bbf90943c23a67e9251271e77111153bf694237e8a43d",
+    "artifacts/study_v2/diagnostics/chunk-000074.jsonl": "e529d7fc4bee6d6118e9dd0a2a73a77707a55775f3788b4e41dcd9f9a3a26ca6",
+    "artifacts/study_v2/diagnostics/chunk-000075.jsonl": "baa1da4928956edc5cc17d1b37ac7529db4cc4a6c7df0ed041d8478bfe3b0995",
+    "artifacts/study_v2/diagnostics/chunk-000076.jsonl": "a62a54e02752d26601b8b31b55e8a8b49a1473d01fceef85e074a59cd789b0ad",
+    "artifacts/study_v2/diagnostics/chunk-000077.jsonl": "7bfe843d01b6b23edea8524baca8382f13f27e6ad02710a3b3ccc1cd0d498584",
+    "artifacts/study_v2/diagnostics/chunk-000078.jsonl": "0219d0f3ab3b65ae081d980e7a9f2772e1e92a53ce43ced038525ec408618735",
+    "artifacts/study_v2/diagnostics/chunk-000079.jsonl": "73aae9d1c37031b4cc58eacdfcb58074778ff878ec46f1152e92c6140211304a",
+    "artifacts/study_v2/diagnostics/chunk-000080.jsonl": "8bfab3a006ff4c93ffa2367ec52dc4cc1422b2e6cf18df79bc2472d617d9c7af",
+    "artifacts/study_v2/diagnostics/chunk-000081.jsonl": "218eb2b748a79b8ed90e47e24038ec2d586e0070bf9cb4471932a6e2cf5848fa",
+    "artifacts/study_v2/diagnostics/chunk-000082.jsonl": "2c6052786dcb7b9e8010f52edc53b8d756dfd6f432abacd19def9b795ebe3c8d",
+    "artifacts/study_v2/diagnostics/chunk-000083.jsonl": "2c7a820f5deff9f1484b9723cbfa3d5b98abe13b3fd5385e12173ffe32394976",
+    "artifacts/study_v2/diagnostics/chunk-000084.jsonl": "b0fde2cbdc7ae8bfc5193301592129187bc6b0056e17da005928e56b4a984a27",
+    "artifacts/study_v2/diagnostics/chunk-000085.jsonl": "458aceec52101acfd702aafc5c39b78e597697c19e3db08c93c149e89e9b827a",
+    "artifacts/study_v2/diagnostics/chunk-000086.jsonl": "454e3fb821532af9cecbbb456295b9671e12079aa730483d7877cee073a7c93f",
+    "artifacts/study_v2/diagnostics/chunk-000087.jsonl": "5fbdca09cc9541651e76c65a025a5e23b1123edb22d0e64f532fd320f019bc7f",
+    "artifacts/study_v2/diagnostics/chunk-000088.jsonl": "320bf09b720c6d7d6eb0a6e55cd071593be326a15f1028998e748bd66baeb6ef",
+    "artifacts/study_v2/diagnostics/chunk-000089.jsonl": "c6bcab3029dfab3c27b0c04946cc0d72c1ff8b23fc7a71c16cc75b4dc0890df7",
+    "artifacts/study_v2/diagnostics/chunk-000090.jsonl": "22d9ae99f9d6c52655add93e455260157a2c965f10e125d2c5b9e21716c0638d",
+    "artifacts/study_v2/diagnostics/chunk-000091.jsonl": "b3d48a4c368f9a149a3ec187d824339a01b9e964fe361e95b2b7ad453a017c70",
+    "artifacts/study_v2/diagnostics/chunk-000092.jsonl": "36fe5e30cc8479f882e33c6e75a75e855ca9907ebfa163d9903b7080916b2e53",
+    "artifacts/study_v2/diagnostics/chunk-000093.jsonl": "c8fa5fe069eda11b91929a8db0dd6db2ebc9893e1c956d0ba76d362e8c3b7a23",
+    "artifacts/study_v2/diagnostics/chunk-000094.jsonl": "9295ac212d9005df9df5fadf60958afecde0d218e48fc82dcc3f92e49abc62b1",
+    "artifacts/study_v2/diagnostics/chunk-000095.jsonl": "0787a7faab4198769690388698631395a14e7d73e3a48f895f18542eb453d791",
+    "artifacts/study_v2/diagnostics/chunk-000096.jsonl": "e0f7a04bf293a95a3d7352edb4f54d4844897d2d31b11bcbf916975218d1fd86",
+    "artifacts/study_v2/diagnostics/chunk-000097.jsonl": "a83ff71cb73a010d3d93f61a90e7a7521ed812cfdaf354d351967e80427cbe60",
+    "artifacts/study_v2/diagnostics/chunk-000098.jsonl": "a87cc343346173de7b75c1b1bf5bedc43dedf2f749fcb05a02386694b9d9a214",
+    "artifacts/study_v2/diagnostics/chunk-000099.jsonl": "f18e6c0b998a77f1605aa7e8bb33650d2d762bc4ba34e4a0bd6483a439074ded",
+    "artifacts/study_v2/diagnostics/chunk-000100.jsonl": "5ef948aa035d2eb7ad48787e7e65879782954209a442706768c57f9a0a2c0d27",
+    "artifacts/study_v2/diagnostics/chunk-000101.jsonl": "5175ad1c132f27f8e8164eae532cc6274f65a769a3f5aed196648647a24417df",
+    "artifacts/study_v2/diagnostics/chunk-000102.jsonl": "e1cd2f6760f09435ab63cf367f6354300ed6865b2d924a39bf341df574310b5d",
+    "artifacts/study_v2/diagnostics/chunk-000103.jsonl": "c05db40e0b98b161480a04a577ea720777e83b5f4e37ee4f12f3828a24bcbfac",
+    "artifacts/study_v2/diagnostics/chunk-000104.jsonl": "893ec97835ef03c95dbb79747ea885e1cf4e3d4c775f3aad96998c714161b75d",
+    "artifacts/study_v2/diagnostics/chunk-000105.jsonl": "f3759ba6d75b60b1c586a9fc8ed71f18a3fb2272e0134c8b85590eca2fc05831",
+    "artifacts/study_v2/diagnostics/chunk-000106.jsonl": "55e326ecd9d85d8a15f82a00ffd764c79f5d87c46b8ad414f841628edd5379e2",
+    "artifacts/study_v2/diagnostics/chunk-000107.jsonl": "c6e08b5349ee43d9c5b4488db50cf05d14aa993b3bb1996facbc9152a27ac135",
+    "artifacts/study_v2/diagnostics/chunk-000108.jsonl": "3640a14f138352d5523d45554f15d018fccf814909e65bf7f041c61b827ad6e8",
+    "artifacts/study_v2/diagnostics/chunk-000109.jsonl": "73698fd086224a0401f183c9dc121c70e02cbe5456bfa59f9313af6fc1468094",
+    "artifacts/study_v2/diagnostics/chunk-000110.jsonl": "e6d7b14a802e128d3da882beba47ee8c483a44107b980834ab9b62952e501a36",
+    "artifacts/study_v2/diagnostics/chunk-000111.jsonl": "a464a97aa19d35608f427f6967a4f0509d3621f642f4d6e16e1521e5cfe59966",
+    "artifacts/study_v2/diagnostics/chunk-000112.jsonl": "856cae06da633e5e36c90821269bb71061e4785c25499c302977464b05ee9b04",
+    "artifacts/study_v2/diagnostics/chunk-000113.jsonl": "44ffeaf3d00a71c36e9b7f8c335fd4ae92a5f833d27218c46b952b4cb205fad6",
+    "artifacts/study_v2/diagnostics/chunk-000114.jsonl": "edae6b20f9b6589354746ce84099e337505397de87148f84c5233a5ab75dfeea",
+    "artifacts/study_v2/diagnostics/chunk-000115.jsonl": "eccfe90fef6949f1173c5db009050006b74678ef5cb12041ed7389ca8dfc890b",
+    "artifacts/study_v2/diagnostics/chunk-000116.jsonl": "e4eb95272d28c70d1b8f84042f075a133b70c0e00b9fcfbbd60c77a5b235ccce",
+    "artifacts/study_v2/diagnostics/chunk-000117.jsonl": "78ee76181fe7fa45f2299dc3bc62a14d76a2bc4eb0af3dc2c30247d08be580e8",
+    "artifacts/study_v2/diagnostics/chunk-000118.jsonl": "27721e07a1f99c0e55b3ad22368c39a03bc67fe9630cad3a58390e40d02e0026",
+    "artifacts/study_v2/diagnostics/chunk-000119.jsonl": "de3ebd18bb30d53b96b536d1e4c58e49da7d539e8ce9a120c753abbfd7f8e525",
+    "artifacts/study_v2/diagnostics/chunk-000120.jsonl": "e778e2c6586f6d53543a3dc340561f0fd1c21f3a017f2fa6aa56bbb871bd831a",
+    "artifacts/study_v2/diagnostics/chunk-000121.jsonl": "d8d2a906c1ae070ccb7202c81eba7b80c4398e4d30394822cc780b0ddeaf1fb6",
+    "artifacts/study_v2/diagnostics/chunk-000122.jsonl": "776764e7b5f36f1bc79882318932f8e00d831b44a7a5a1ee8960671e02b41eee",
+    "artifacts/study_v2/diagnostics/chunk-000123.jsonl": "f4adb12a4e2328a32a02335f060738263b6ed72f7250a9890d8bf21356da58a5",
+    "artifacts/study_v2/diagnostics/chunk-000124.jsonl": "fe3b1a3cb9aa8c8cfee094571e03c9b3ad20a80ee15e31be7891aed7b7f1f300",
+    "artifacts/study_v2/diagnostics/chunk-000125.jsonl": "c011c3c1da0790f5c886a42f54d21012ae184297a251c7320a9754c705c152f0",
+    "artifacts/study_v2/diagnostics/chunk-000126.jsonl": "6ada05a7ca157ba2cbf35d1f8b493c07750f11d3f38ad198a8d7cc2f9c84bb59",
+    "artifacts/study_v2/diagnostics/chunk-000127.jsonl": "ef63e78b543fd5705b16129bf2038319186853422e6d5f0742aef80e347e3908",
+    "artifacts/study_v2/diagnostics/chunk-000128.jsonl": "d463944f663a16a25e201493f54d11dc5e07f210434f71cdf63e9c76cbeb4a76",
+    "artifacts/study_v2/diagnostics/chunk-000129.jsonl": "c503516dea500955e8081a76068f6fc9ec3af731e6a1f07b806eb3abe934fca3",
+    "artifacts/study_v2/diagnostics/chunk-000130.jsonl": "f2efd43bb14396962e61191d163967c82f44799019c9ebdd1e2938b46ad38355",
+    "artifacts/study_v2/diagnostics/chunk-000131.jsonl": "79aac4c927443fe2c25fe72adc85e7a51a288ebdd5690215cec1e019e2a15da5",
+    "artifacts/study_v2/diagnostics/chunk-000132.jsonl": "bd12d5ee0e2c3b755c7d2c4bcd478dcf2cc17f8136d077721e87ebec729caaba",
+    "artifacts/study_v2/diagnostics/chunk-000133.jsonl": "8408c0474ad2150528e46ee80c0dbe4606f1e8528b0a5fb4398f742909fe8ec0",
+    "artifacts/study_v2/diagnostics/chunk-000134.jsonl": "fab78505475291cc3fb8a5b0cbd2904e74d589e51b167c6cea8ac27dc8061327",
+    "artifacts/study_v2/diagnostics/chunk-000135.jsonl": "e60c418dd7752bb65b4c29db6c99882806918f165a3ef2191868ef008a605f20",
+    "artifacts/study_v2/diagnostics/chunk-000136.jsonl": "0e22c82ed4f1d21b9e4bb8c5fe0858e98aad3e271d86b8c389cd79b1e37e35e1",
+    "artifacts/study_v2/diagnostics/chunk-000137.jsonl": "535859dc1e0dfb6cd9cf6966731c07a75841e9f1288dfbf3f5071872f507d8fb",
+    "artifacts/study_v2/diagnostics/chunk-000138.jsonl": "3672f21691769514fd2028c2e06a81e15b4cb3e9d73e4b1ebb0dca3eb5b629e6",
+    "artifacts/study_v2/diagnostics/chunk-000139.jsonl": "b877323ddd881c863f8f2afea13b6f2bf2ab5efe44c99e48118e16cbbe69c7db",
+    "artifacts/study_v2/diagnostics/chunk-000140.jsonl": "e21db546e6ba562090bd5ce57a9b8e95a831987beb024c4162ae2d99cfcee532",
+    "artifacts/study_v2/diagnostics/chunk-000141.jsonl": "b7ab01f2631b120b93413d4ea79912b0126b88b5490ab82dae97af36d7b1783d",
+    "artifacts/study_v2/diagnostics/chunk-000142.jsonl": "e2fdca489e3685dba3a1377c0295c1a14c0a98778bf8d51fd436d1be61c33bbb",
+    "artifacts/study_v2/diagnostics/chunk-000143.jsonl": "00a1c07b9b6152bce856b5c66e71ee1902c2379cf4ef7da107a302b8b787ba8d",
+    "artifacts/study_v2/diagnostics_exact/chunk-000000.jsonl": "b87f2430e026a821d4f803e95b5783652a7cf6c15acce602330b2ef7bbbaae85",
+    "artifacts/study_v2/diagnostics_exact/chunk-000001.jsonl": "1bf986b4c4cdfd44788fa7562eef2c39b166c71ab5b5d40b20cefa8f2b2299c2",
+    "artifacts/study_v2/diagnostics_exact/chunk-000002.jsonl": "d2808855924a6e86f6c5ac8fb79b8d438d9d4c8650d366e311bfa5e0d595a49d",
+    "artifacts/study_v2/diagnostics_exact/chunk-000003.jsonl": "8445c994e026db0eb416b25348458c4c4b755eb0d20cb7aa7def18d3bc4d85bc",
+    "artifacts/study_v2/diagnostics_exact/chunk-000004.jsonl": "1c46b069dd9e34dd80caae6152cb5a0f27dc14cc1ee3dc6e9d0ef90d3d168ab3",
+    "artifacts/study_v2/diagnostics_exact/chunk-000005.jsonl": "cf6efbe085f49e84b4eb69e0f8cebffee54dacd2b3f09611800e0967d5eefbc5",
+    "artifacts/study_v2/diagnostics_exact/chunk-000006.jsonl": "f3f616fb826c7716993cc0193504f8277ea1b005d2fb869038004c0a44350157",
+    "artifacts/study_v2/diagnostics_exact/chunk-000007.jsonl": "aa44dfc5b110e043aa24cfcdc48ada526c4dfc33814c9f39dd6b91b6f4d96b0f",
+    "artifacts/study_v2/diagnostics_exact/chunk-000008.jsonl": "52258c8cafc9482be1b7bf6fc9b26d95180b74a73e595737c97a96390ee2e4d5",
+    "artifacts/study_v2/diagnostics_exact/chunk-000009.jsonl": "33d7273474cc84d899a231fa9e9d481e28b3df9ec884ac1521196f99f1110823",
+    "artifacts/study_v2/diagnostics_exact/chunk-000010.jsonl": "915cac5f619e52b0429fdbe1e28379e019909279dc00ef3b4d9d7fa6cfd9dda0",
+    "artifacts/study_v2/diagnostics_exact/chunk-000011.jsonl": "d2d34970a81f0d122fd9746e72a22ada10edbebd908f99386875ba113e32d9bb",
+    "artifacts/study_v2/diagnostics_exact/chunk-000012.jsonl": "abb0b35e00c91660b9c97a161cc4b10907ca56142c91e3643e634d81b70333a2",
+    "artifacts/study_v2/diagnostics_exact/chunk-000013.jsonl": "db055167ef79d02326fcc2636aa2a177ee5f38056b4bc107053629d8d2126a01",
+    "artifacts/study_v2/diagnostics_exact/chunk-000014.jsonl": "218677e933c4bcf88ca121fc3a9934972cb4e87e3c70734e0f321c16bcff67e2",
+    "artifacts/study_v2/diagnostics_exact/chunk-000015.jsonl": "88041a7dbcbe9d96f468e13f5aaf51438ee37a016bc5f038550365c7d771fa78"
+  },
+  "v1_files_and_scientific_freezes_verified": true,
+  "full_model_files_sha256_verified": true,
+  "wall_seconds": 12691.948907,
+  "modes": {
+    "D0": {
+      "planned": 192,
+      "correct": 95,
+      "joint_correct": 0,
+      "answer_codes": {
+        "B": 164,
+        "A": 25,
+        "UNKNOWN": 3
+      },
+      "displayed_axis_choices": {
+        "Y": 82,
+        "X": 107,
+        "INVALID": 3
+      },
+      "expected_answer_codes": {
+        "A": 86,
+        "B": 86,
+        "TIE": 20
+      },
+      "valid_numeric_count": 0,
+      "both_numeric_within_1pct": 0,
+      "both_numeric_within_10pct": 0,
+      "median_max_relative_numeric_error": null,
+      "swapped_numeric_within_1pct": 0,
+      "negative_influence_outputs": 0,
+      "numeric_exactly_one_one": 0,
+      "episodes_with_executed_operations": 0,
+      "executed_operations": 0,
+      "generation_tokens": 0,
+      "inference_seconds": 13.786664411833044
+    },
+    "D1": {
+      "planned": 192,
+      "correct": 85,
+      "joint_correct": 0,
+      "answer_codes": {
+        "A": 144,
+        "B": 48
+      },
+      "displayed_axis_choices": {
+        "X": 128,
+        "Y": 64
+      },
+      "expected_answer_codes": {
+        "A": 86,
+        "B": 86,
+        "TIE": 20
+      },
+      "valid_numeric_count": 192,
+      "both_numeric_within_1pct": 0,
+      "both_numeric_within_10pct": 0,
+      "median_max_relative_numeric_error": 411.9859316542655,
+      "swapped_numeric_within_1pct": 0,
+      "negative_influence_outputs": 6,
+      "numeric_exactly_one_one": 0,
+      "episodes_with_executed_operations": 0,
+      "executed_operations": 0,
+      "generation_tokens": 41117,
+      "inference_seconds": 1682.0783876960486
+    },
+    "D2": {
+      "planned": 192,
+      "correct": 0,
+      "joint_correct": 0,
+      "answer_codes": {
+        "INVALID": 192
+      },
+      "displayed_axis_choices": {
+        "INVALID": 192
+      },
+      "expected_answer_codes": {
+        "A": 86,
+        "B": 86,
+        "TIE": 20
+      },
+      "valid_numeric_count": 0,
+      "both_numeric_within_1pct": 0,
+      "both_numeric_within_10pct": 0,
+      "median_max_relative_numeric_error": null,
+      "swapped_numeric_within_1pct": 0,
+      "negative_influence_outputs": 0,
+      "numeric_exactly_one_one": 0,
+      "episodes_with_executed_operations": 1,
+      "executed_operations": 4,
+      "generation_tokens": 242909,
+      "inference_seconds": 10004.043386636258
+    },
+    "D3": {
+      "planned": 64,
+      "correct": 36,
+      "joint_correct": 0,
+      "answer_codes": {
+        "A": 38,
+        "INVALID": 3,
+        "B": 23
+      },
+      "displayed_axis_choices": {
+        "X": 54,
+        "Y": 7,
+        "INVALID": 3
+      },
+      "expected_answer_codes": {
+        "A": 32,
+        "B": 32
+      },
+      "valid_numeric_count": 61,
+      "both_numeric_within_1pct": 0,
+      "both_numeric_within_10pct": 0,
+      "median_max_relative_numeric_error": 141.4244126516772,
+      "swapped_numeric_within_1pct": 0,
+      "negative_influence_outputs": 0,
+      "numeric_exactly_one_one": 18,
+      "episodes_with_executed_operations": 0,
+      "executed_operations": 0,
+      "generation_tokens": 20420,
+      "inference_seconds": 841.1786553639104
+    }
+  },
+  "first_response_prefix_audit": {
+    "first_object_parseable": 112,
+    "batch_exceeds_four": 29,
+    "first_object_not_parseable": 80,
+    "prefix_not_executable": 81,
+    "wrong_request_schema": 2
+  },
+  "first_50_timing_by_n": {
+    "16": {
+      "first_episodes": 50,
+      "median_seconds": 24.68380030849221,
+      "mean_seconds": 30.987506963539346,
+      "p90_seconds_nearest_rank": 68.64624875300797,
+      "8448_episode_hours_at_observed_mean": 72.71734967443899,
+      "caveat": "Failure-dominated diagnostic workload extrapolation, NOT a valid-observer throughput benchmark or promised ETA."
+    },
+    "8": {
+      "first_episodes": 50,
+      "median_seconds": 80.13801781799702,
+      "mean_seconds": 61.7372226761427,
+      "p90_seconds_nearest_rank": 85.25281034602085,
+      "8448_episode_hours_at_observed_mean": 144.87668254668154,
+      "caveat": "Failure-dominated diagnostic workload extrapolation, NOT a valid-observer throughput benchmark or promised ETA."
+    },
+    "4": {
+      "first_episodes": 50,
+      "median_seconds": 81.99380310649576,
+      "mean_seconds": 58.956465679142276,
+      "p90_seconds_nearest_rank": 85.12352884802385,
+      "8448_episode_hours_at_observed_mean": 138.35117279372054,
+      "caveat": "Failure-dominated diagnostic workload extrapolation, NOT a valid-observer throughput benchmark or promised ETA."
+    }
+  },
+  "diagnostic_difficulty_profile": {
+    "16": {
+      "circuits": 16,
+      "ties": 0,
+      "margin_below_point_two": 0,
+      "median_margin": 0.4695980623223212
+    },
+    "8": {
+      "circuits": 16,
+      "ties": 2,
+      "margin_below_point_two": 5,
+      "median_margin": 0.34453372794907644
+    },
+    "4": {
+      "circuits": 16,
+      "ties": 3,
+      "margin_below_point_two": 7,
+      "median_margin": 0.2914110312123369
+    }
+  },
+  "illustrative_examples": {
+    "D1": {
+      "trial_id": "diagnostic-L18C02-N16-D1-F0",
+      "selection": "first recorded episode in this mode; illustrative, not representative",
+      "oracle": {
+        "outputs": [
+          0.0,
+          0.0032214983977950796,
+          0.008304990645452587,
+          0.006180552924065491
+        ],
+        "influence_A": 0.0056320225858614995,
+        "influence_B": 0.0026729680595910877,
+        "relative_margin": 0.3562983575292343,
+        "truth": "A"
+      },
+      "reported_numeric": [
+        1.3474609375,
+        0.88359375
+      ],
+      "final": {
+        "answer": "A",
+        "IX": 1.3474609375,
+        "IY": 0.88359375,
+        "reason": "IX is calculated as the sum of absolute differences of F(1,y) and F(0,y) for all y. IY is calculated as the sum of absolute differences of F(0,1) and F(0,0), and F(1,1) and F(1,0). The coefficients of gX are larger in magnitude than gY, thus influencing IX more significantly."
+      },
+      "first_response_excerpt": "```json\n{\"answer\":\"A\", \"IX\": 1.3474609375, \"IY\": 0.88359375, \"reason\":\"IX is calculated as the sum of absolute differences of F(1,y) and F(0,y) for all y. IY is calculated as the sum of absolute differences of F(0,1) and F(0,0), and F(1,1) and F(1,0). The coefficients of gX are larger in magnitude than gY, thus influencing IX more significantly.\"}\n```"
+    },
+    "D2": {
+      "trial_id": "diagnostic-L18C02-N16-D2-F0",
+      "selection": "first recorded episode in this mode; illustrative, not representative",
+      "oracle": {
+        "outputs": [
+          0.0,
+          0.0032214983977950796,
+          0.008304990645452587,
+          0.006180552924065491
+        ],
+        "influence_A": 0.0056320225858614995,
+        "influence_B": 0.0026729680595910877,
+        "relative_margin": 0.3562983575292343,
+        "truth": "A"
+      },
+      "reported_numeric": null,
+      "final": null,
+      "first_response_excerpt": "{\"operations\":[{\"id\":\"temp1\",\"op\":\"mul\",\"args\":[[\"gX\",0],[\"uX\",0]]},{\"id\":\"temp2\",\"op\":\"mul\",\"args\":[[\"gY\",0],[\"uY\",0]]},{\"id\":\"temp3\",\"op\":\"add\",\"args\":[[\"temp1\",0],[\"temp2\",0]]},{\"id\":\"temp4\",\"op\":\"gelu\",\"args\":[[\"temp3\",0]]},{\"id\":\"temp5\",\"op\":\"mul\",\"args\":[[\"d\",0],[\"temp4\",0]]},{\"id\":\"temp6\",\"op\":\"abs\",\"args\":[[\"F(1,0)\",0],[\"F(0,0)\",0]]},{\"id\":\"temp7\",\"op\":\"abs\",\"args\":[[\"F(1,1)\",0],[\"F(0,1)\",0]]},{\"id\":\"temp8\",\"op\":\"add\",\"args\":[[\"temp6\",0],[\"temp7\",0]]},{\"id\":\"temp9\",\"op\":\"abs\",\"args\":[[\"F(0,1)\",0],[\"F(0,0)\",0]]},{\"id\":\"temp10\",\"op\":\"abs\",\"args\":[[\"F(1,1)\",0],[\"F(1,0)\",0]]},{\"id\":\"temp11\",\"op\":\"add\",\"args\":[[\"temp9\",0],[\"temp10\",0]]},{\"id\":\"ix_calc\",\"op\":\"sum\",\"args\":[[\"temp8\",0],[\"tem"
+    },
+    "D3": {
+      "trial_id": "diagnostic-L18C02-N16-D3-F0",
+      "selection": "first recorded episode in this mode; illustrative, not representative",
+      "oracle": {
+        "outputs": [
+          0.0,
+          0.0032214983977950796,
+          0.008304990645452587,
+          0.006180552924065491
+        ],
+        "influence_A": 0.0056320225858614995,
+        "influence_B": 0.0026729680595910877,
+        "relative_margin": 0.3562983575292343,
+        "truth": "A"
+      },
+      "reported_numeric": [
+        1.0,
+        1.0
+      ],
+      "final": {
+        "answer": "A",
+        "IX": 1,
+        "IY": 1,
+        "reason": "IX = (abs(0.0-0.0) + abs(0.0032214983977950796-0.008304990645452587)) / 2 ≈ 0.00166. IY = (abs(0.0032214983977950796-0.0) + abs(0.006180552924065491-0.0032214983977950796)) / 2 ≈ 0.00230. Since 0.00166 < 0.00230, the influence of X is larger."
+      },
+      "first_response_excerpt": "```json\n{\"answer\":\"A\", \"IX\":1, \"IY\":1, \"reason\":\"IX = (abs(0.0-0.0) + abs(0.0032214983977950796-0.008304990645452587)) / 2 ≈ 0.00166. IY = (abs(0.0032214983977950796-0.0) + abs(0.006180552924065491-0.0032214983977950796)) / 2 ≈ 0.00230. Since 0.00166 < 0.00230, the influence of X is larger.\"}\n```"
+    }
+  },
+  "unrun_stage_files_absent": {
+    "development_summary.json": true,
+    "calibration_summary.json": true,
+    "main_status.json": true,
+    "analysis.json": true
+  }
+}
