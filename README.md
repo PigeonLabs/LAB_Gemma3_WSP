@@ -100,6 +100,7 @@ greedy 생성**을 비교했다. 표의 분모는 각 검사에 사용한 입력
 | v1-implementation-tests | complete | 2026-11-03T13:22:11.050417+00:00 | [log](artifacts/stages/20261103T132206703466Z-v1-implementation-tests.log) · [record](artifacts/stages/20261103T132206703466Z-v1-implementation-tests.json) |
 | v1-preregister | complete | 2026-11-03T13:24:04.305999+00:00 | [log](artifacts/stages/20261103T132403936425Z-v1-preregister.log) · [record](artifacts/stages/20261103T132403936425Z-v1-preregister.json) |
 | v1-extract | complete | 2026-11-03T13:24:28.731682+00:00 | [log](artifacts/stages/20261103T132422678297Z-v1-extract.log) · [record](artifacts/stages/20261103T132422678297Z-v1-extract.json) |
+| v1-readiness-tests | complete | 2026-11-03T13:25:27.801506+00:00 | [log](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.log) · [record](artifacts/stages/20261103T132524236295Z-v1-readiness-tests.json) |
 
 실행 상태와 업로드 상태는 구분한다. GitHub의 파일과 커밋이 공개된 증거이며,
 로컬 전송 대기·확인 영수증은 `.publication/`에 보관한다.

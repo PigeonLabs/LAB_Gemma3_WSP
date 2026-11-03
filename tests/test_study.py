@@ -12,6 +12,7 @@ from wsp.circuits import oracle, serialized, modified_table
 from wsp.policies import allowed_combinations, views, raw_scores, plans
 from wsp.prompts import prompt
 from wsp.statistics import arm_scores
+from wsp.statistics import analyze
 from wsp.preservation import preservation_prompts
 
 
@@ -102,6 +103,27 @@ class StudyTests(unittest.TestCase):
     def test_new_preservation_suite_size(self):
         values=preservation_prompts(); self.assertEqual(len(values),32)
         self.assertEqual(len(set(values)),32)
+
+    def test_layer_cluster_analysis_and_semantic_gate(self):
+        rows=[]
+        for layer in range(24):
+            for circuit in range(8):
+                cid=f'{layer}-{circuit}'
+                base={'circuit_id':cid,'layer':layer,'wording':0,'truth':'A','target':'B','preserved':True}
+                rows.append({**base,'arm':'O','answer':'A'})
+                for arm in ['W','S','M','R']:
+                    rows.append({**base,'arm':arm,'answer':'B' if arm=='W' else 'A'})
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            for name in ['main','prose']: atomic_json(root/f'{name}_status.json',{'status':'complete'})
+            with patch('wsp.statistics.PUBLIC',root),patch('wsp.statistics.gate',return_value={}),patch('wsp.statistics.load_rows',return_value=rows),patch('builtins.print'):
+                analyze()
+            r=json.loads((root/'analysis.json').read_text())
+            self.assertTrue(r['semantic_gate_passed'])
+            self.assertEqual(r['arm_success_rate']['W'],1.)
+            self.assertEqual(r['comparisons']['W-S']['interval'],[1.,1.])
+            self.assertEqual(r['conditional_success']['S']['rate'],0.)
+            self.assertEqual(len(r['layer_rates']),24)
 
 
 if __name__=='__main__': unittest.main()

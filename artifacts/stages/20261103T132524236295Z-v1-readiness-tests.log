@@ -1,0 +1,25 @@
+{"command": ["/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"], "started_at": "2026-11-03T13:25:24.236310+00:00"}
+test_preservation_and_exception_restore (test_edits.EditTests.test_preservation_and_exception_restore) ... ok
+test_reject_invalid_edits (test_edits.EditTests.test_reject_invalid_edits) ... ok
+test_rejects_credential_and_symlink (test_publication.PublicationTests.test_rejects_credential_and_symlink) ... ok
+test_snapshot_excludes_models_and_is_immutable (test_publication.PublicationTests.test_snapshot_excludes_models_and_is_immutable) ... ok
+test_success_and_failure_both_preserve_logs_and_queue (test_publication.PublicationTests.test_success_and_failure_both_preserve_logs_and_queue) ... {"stage_status": "complete", "log": "/tmp/tmpmeamk7v5/artifacts/stages/20261103T132527074156Z-test-0.log", "publication": "pending", "snapshot": "/tmp/tmpmeamk7v5/.publication/20261103T132527083627Z-test-0"}
+{"stage_status": "failed", "log": "/tmp/tmpmeamk7v5/artifacts/stages/20261103T132527084937Z-test-7.log", "publication": "pending", "snapshot": "/tmp/tmpmeamk7v5/.publication/20261103T132527093952Z-test-7"}
+ok
+test_all_subsets_preserve_scalar_function_and_wire_truth (test_study.StudyTests.test_all_subsets_preserve_scalar_function_and_wire_truth) ... ok
+test_budget_matches_actual_full_tensor_difference (test_study.StudyTests.test_budget_matches_actual_full_tensor_difference) ... ok
+test_canonical_prompts_identical_under_gauge_edit (test_study.StudyTests.test_canonical_prompts_identical_under_gauge_edit) ... ok
+test_four_point_truth (test_study.StudyTests.test_four_point_truth) ... ok
+test_gate_cannot_be_overridden_by_failed_summary (test_study.StudyTests.test_gate_cannot_be_overridden_by_failed_summary) ... ok
+test_information_views_and_derangement (test_study.StudyTests.test_information_views_and_derangement) ... ok
+test_journal_resume_provenance_and_immutability (test_study.StudyTests.test_journal_resume_provenance_and_immutability) ... ok
+test_layer_cluster_analysis_and_semantic_gate (test_study.StudyTests.test_layer_cluster_analysis_and_semantic_gate) ... ok
+test_new_preservation_suite_size (test_study.StudyTests.test_new_preservation_suite_size) ... ok
+test_plans_have_fixed_budget_and_no_result_feedback (test_study.StudyTests.test_plans_have_fixed_budget_and_no_result_feedback) ... ok
+test_prompts_are_blind_and_prose_not_prefilled (test_study.StudyTests.test_prompts_are_blind_and_prose_not_prefilled) ... ok
+test_success_requires_original_correct_and_preservation (test_study.StudyTests.test_success_requires_original_correct_and_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.183s
+
+OK

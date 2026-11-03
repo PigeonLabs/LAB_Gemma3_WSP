@@ -25,7 +25,7 @@
   "wsp/interventions.py": "d4c16b895a3bc9209b2bc3163d8fef854392a9d7dcf41b10340c4e6b335424a8",
   "tests/test_edits.py": "4f67c9a32c42f93ff92b890cdb2626e74fee826271674b2a09592495e70ed214",
   "tests/test_publication.py": "204e354133a330398ab7726eec6050e6112bdbc69cbed85118cf4d33b33a3459",
-  "tests/test_study.py": "79f51306c1704527a933a6b090aa1eb9373407024520a751489f3e69b3594cbd",
+  "tests/test_study.py": "f92296a24c935592658e6e0fcb08684e89738ec0b4ddf15070295a492c41d020",
   "plans/structure_only.json": "33f6da4bb71a25dd45302a2e95dce0fd3b6d32070645582d7869a0d7c1c0049d",
   "plans/study_v1.json": "77dd8ca49021552bc66d92cc5fc23f876d2f7672cd154e4467c161980359e645",
   "plans/weight_informed.json": "29dd6eaa563b8d430a36f42f0445ca8bf13b8a14aadf765b31052ca4a7b216d9"
