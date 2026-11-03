@@ -6,6 +6,8 @@ ROOT=Path(__file__).resolve().parents[1]
 PUBLIC=ROOT/'artifacts/study_v2'
 
 def build():
+    from report_v2_diagnostics import build as diagnostics_report
+    diagnostics_report()
     PUBLIC.mkdir(parents=True,exist_ok=True)
     summaries={}
     for name in ['dataset','diagnostic','development','calibration']:
@@ -26,6 +28,9 @@ def build():
         r=summaries.get(name)
         status=('완료 (세부 수치는 원본 JSON)' if name=='diagnostic' else r.get('status','완료')) if r else '미완료'
         lines.append(f'| {name} | '+(f'[{status}](artifacts/study_v2/{name}_summary.json)' if r else status)+' |')
+    if 'diagnostic' in summaries:
+        lines+=['','[진단 상세 보고서](artifacts/study_v2/DIAGNOSTIC_REPORT.md)',
+                '', '![진단 결과](docs/figures/v2_diagnostics.svg)']
     lines+=['','![교정 결과; 완료된 구성만 표시](docs/figures/v2_calibration.svg)','',
         '원자료: [v2 폴더](artifacts/study_v2). 즉시 선택·도구 계산·정확값 제공을 구분하며, 형식 실패는 정답으로 세지 않습니다.',
         '', '참고: [Neural Networks Are Already Clean](https://already-clean.goodfire.com/) · '

@@ -1,0 +1,41 @@
+{
+  "study": "v2",
+  "stage": "diagnostics_exact",
+  "sources": {
+    "wsp/v2/arithmetic.py": "0c534bc150b81666c2119e9f7351a0d5c756ab24cf2d5281c4c1fb929d8b1d3e",
+    "wsp/v2/data.py": "f512261d2f0141a2cc033537ed3ee9982def415ba2a7dc1c52fcbb4f5690fe6e",
+    "wsp/v2/state.py": "6fb40f9c732307d91e89c437d515991394821a921e096de1025c9b0c6f330e00",
+    "wsp/v2/__init__.py": "8140b800fca8c500b96f91dc0ef9584bdb4286686e8151a1a7c86b5cfb035b2c",
+    "wsp/v2/observer.py": "4248388bf41728c4a1155767470990a94f6eba55ca37595ff980036fcd2d4fd7",
+    "wsp/v2/calibration.py": "a44bea61a4d90314b1aec41b5bfcfe57b85040bc52df7e26b4e20027c602e9cc",
+    "plans/study_v2.json": "551f3b6e98fa841319dccd266cf091893495de3c41c65c911050d8cf30fdb35d",
+    "scripts/run_study_v2.py": "6478b0421da2e24bf7b06330ad35e4f50a0485adcf6b29e572322798fdacf926"
+  },
+  "circuit_ids": [
+    "diagnostic-L18C02-N16",
+    "diagnostic-L03C00-N16",
+    "diagnostic-L33C02-N16",
+    "diagnostic-L13C05-N16",
+    "diagnostic-L28C03-N16",
+    "diagnostic-L11C03-N16",
+    "diagnostic-L13C06-N16",
+    "diagnostic-L33C01-N16",
+    "diagnostic-L00C01-N16",
+    "diagnostic-L23C04-N16",
+    "diagnostic-L33C07-N16",
+    "diagnostic-L08C01-N16",
+    "diagnostic-L23C06-N16",
+    "diagnostic-L18C00-N16",
+    "diagnostic-L23C00-N16",
+    "diagnostic-L17C02-N16"
+  ],
+  "modes": [
+    "D3"
+  ],
+  "frames": [
+    0,
+    1,
+    2,
+    3
+  ]
+}
