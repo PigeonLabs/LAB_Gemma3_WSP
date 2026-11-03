@@ -1,0 +1,111 @@
+{
+  "registered_at": "2026-11-03T14:15:14.366847+00:00",
+  "config": {
+    "study_id": "gemma3_wsp_v2",
+    "target": "models/gemma-3-4b-it",
+    "all_model_roles": "same Gemma 3 4B IT revision; separate contexts and no edited observer",
+    "source_revision": "bf46152c47f5dd20b896357cb51abc4c03b8ee8c",
+    "v1_commit": "f5ac320bee1dc5a9c3896525e8df57e638599122",
+    "seed": 2026110303,
+    "sizes": [
+      16,
+      8,
+      4
+    ],
+    "calibration_layers": [
+      0,
+      11,
+      17,
+      33
+    ],
+    "development_layers": [
+      3,
+      8,
+      13,
+      18,
+      23,
+      28
+    ],
+    "development_per_layer": 8,
+    "calibration_per_layer": 16,
+    "test_per_layer": 8,
+    "input_scale": 16,
+    "minimum_relative_margin": 0.2,
+    "minimum_total_influence": 1e-08,
+    "edit_fraction": 0.25,
+    "scale": 8,
+    "edit_norm_tolerance": 0.05,
+    "minimum_candidate_subsets": 2,
+    "candidate_pool_limit": 16,
+    "selection_seeds": [
+      5101,
+      5102
+    ],
+    "arms": [
+      "W",
+      "S",
+      "M",
+      "R",
+      "H"
+    ],
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "accuracy_threshold": 0.8,
+    "consistency_threshold": 0.9,
+    "numeric_atol": 1e-10,
+    "numeric_rtol": 1e-06,
+    "observer_max_generated_tokens": 2048,
+    "observer_max_operations": 32,
+    "observer_max_batch_operations": 4,
+    "observer_format_retries": 1,
+    "observer_temperature": 0,
+    "editor_max_generated_tokens": 512,
+    "editor_max_operations": 8,
+    "editor_temperature": 0.7,
+    "editor_top_p": 0.95,
+    "diagnostic_circuits": 16,
+    "diagnostic_modes": [
+      "D0",
+      "D1",
+      "D2"
+    ],
+    "diagnostic_exact_size": 16,
+    "bf16_prompts": 32,
+    "generation_prompts": 8,
+    "generation_max_new_tokens": 64,
+    "fp32_variants": 120,
+    "trace_replay_circuits": 48,
+    "primary_minimum_advantage": 0.15,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 2026110304,
+    "familywise_alpha": 0.05,
+    "development_futility": "Do not skip planned cases based on early results; all 48 x 4 frames per size run.",
+    "selection": "Largest size passing every development gate; assess selected size once on fresh calibration. No fallback after calibration failure.",
+    "gate_definition": "Overall and every frame winner accuracy >=.8; joint winner and two numeric influences >=.8 overall; all-four-frames decoded-winner consistency >=.9. Invalid or missing answers are failures, including consistency.",
+    "test_baseline_gate": "Apply same criteria on unedited test cases before attack claims; failure terminates confirmatory interpretation without retuning.",
+    "downstream_implementation": "Freeze any later-stage implementation in an append-only manifest before test weights are provided to editor or any test response is generated. It cannot alter this protocol or frozen calibration harness.",
+    "estimated_hours_core": [
+      48,
+      92
+    ],
+    "estimated_hours_optional_semantics": [
+      6,
+      12
+    ]
+  },
+  "sources": {
+    "wsp/v2/arithmetic.py": "0c534bc150b81666c2119e9f7351a0d5c756ab24cf2d5281c4c1fb929d8b1d3e",
+    "wsp/v2/data.py": "f512261d2f0141a2cc033537ed3ee9982def415ba2a7dc1c52fcbb4f5690fe6e",
+    "wsp/v2/state.py": "6fb40f9c732307d91e89c437d515991394821a921e096de1025c9b0c6f330e00",
+    "wsp/v2/__init__.py": "8140b800fca8c500b96f91dc0ef9584bdb4286686e8151a1a7c86b5cfb035b2c",
+    "wsp/v2/observer.py": "4248388bf41728c4a1155767470990a94f6eba55ca37595ff980036fcd2d4fd7",
+    "wsp/v2/calibration.py": "a44bea61a4d90314b1aec41b5bfcfe57b85040bc52df7e26b4e20027c602e9cc",
+    "plans/study_v2.json": "551f3b6e98fa841319dccd266cf091893495de3c41c65c911050d8cf30fdb35d",
+    "scripts/run_study_v2.py": "6478b0421da2e24bf7b06330ad35e4f50a0485adcf6b29e572322798fdacf926"
+  },
+  "model_manifest_sha256": "0fbe263a87a53889de025dc00b3d1a2d5c51ecd67f362c259f45721f26280f48"
+}

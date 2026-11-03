@@ -35,3 +35,4 @@ flowchart LR
 | v2 단계 | 실행 상태 | 로그 |
 |---|---|---|
 | v2-unit-tests | complete | [원본](artifacts/stages/20261103T141418629140Z-v2-unit-tests.log) |
+| v2-preregister | complete | [원본](artifacts/stages/20261103T141509447572Z-v2-preregister.log) |

@@ -1,0 +1,3 @@
+{"command": ["/media/jeong/ExtHDD/Gemma4_neuron_LAB/.venv/bin/python", "scripts/run_study_v2.py", "preregister"], "started_at": "2026-11-03T14:15:09.447587+00:00"}
+v2 preregistration and full model hashes verified
+preregister completed
